@@ -1,0 +1,7 @@
+ipython
+xlrd
+seaborn
+
+pandas
+transformers
+torch
