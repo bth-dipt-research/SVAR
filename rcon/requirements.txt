@@ -1,7 +1,8 @@
-ipython
+openpyxl
 xlrd
 seaborn
 
+scikit-learn
 pandas
 transformers
 torch
