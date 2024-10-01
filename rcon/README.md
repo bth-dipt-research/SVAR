@@ -1,3 +1,6 @@
+# About
+A classifier, trained on TRVInfra requirements, that determines if a requirement was exported completely or if some text is missing.
+
 # Environment setup
 1. Install miniconda
 2. Switch to the base environment
