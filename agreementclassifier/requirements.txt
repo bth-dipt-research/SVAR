@@ -1,0 +1,7 @@
+openpyxl
+xlrd
+seaborn
+
+setfit
+optuna
+torch --index-url https://download.pytorch.org/whl/cu118
