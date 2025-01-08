@@ -38,6 +38,15 @@ import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # -------------------------------------
+# Instructions
+#
+# 1. Identify with nvidia-smi which GPUs are available
+# 2. Limit, if needed, to run only on a specific GPU, e.g. with index 0,
+#    by invoking CUDA_VISIBLE_DEVICES=0 python nested_crossvalidation.py
+# -------------------------------------
+
+
+# -------------------------------------
 # Configuration
 # -------------------------------------
 dataset = load_dataset("csv", data_files="../data/all_agree_statistics.csv", split="train")
