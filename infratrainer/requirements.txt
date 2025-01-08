@@ -1,0 +1,5 @@
+pytest
+pytest-env
+argilla 
+setfit
+pandas
