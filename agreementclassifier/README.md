@@ -37,7 +37,7 @@ If we create *o* outer folds, we have *o* optimal hyper-parameters. There is no 
  1. Choose a set of hyper-parameter that worked well in the majority of the folds.
  2. Choose the hyper-parameters that led to the best performance overall.
 
-**Important:** For training the final model with SetFit, we use ***all*** available labeled data.
+**Important:** For [training](./train_agreement.py) the final model with SetFit, we use ***all*** available labeled data.
 
 ## Prediction
 
