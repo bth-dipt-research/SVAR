@@ -59,14 +59,18 @@ best_parameters["interpretability"] = {
     "solver": "liblinear"
 }
 
-#best_parameters["reference"] = {
-#    "body_learning_rate": 0.0,
-#    "num_epochs": 0,
-#    "batch_size": 0,
-#    "seed": 0,
-#    "max_iter": 0,
-#    "solver": ""
-#}
+# Best fold: 3
+# Accuracy: 1.0
+# Nested CV average accuracy: 0.8053571428571429
+# Nested CV std deviation: 0.11306547227340522
+best_parameters["reference"] = {
+    "body_learning_rate": 6.158460454793998e-06,
+    "num_epochs": 5,
+    "batch_size": 8,
+    "seed": 10,
+    "max_iter": 298,
+    "solver": "newton-cg"
+}
 
 
 for key, value in best_parameters.items():
@@ -88,12 +92,13 @@ for key, value in best_parameters.items():
 
     print(f'Model parameters: {model_params}')
 
-    model = SetFitModel.from_pretrained("KBLab/sentence-bert-swedish-cased", **model_params)
+    model = SetFitModel.from_pretrained("KBLab/sentence-bert-swedish-cased",
+                                        **model_params)
 
     trainer = Trainer(
-        model = model,
-        train_dataset = dataset["train"],
-        column_mapping = {
+        model=model,
+        train_dataset=dataset["train"],
+        column_mapping={
             "text": "text",
             dim: "label"
         }
@@ -110,4 +115,3 @@ for key, value in best_parameters.items():
 
     del trainer
     torch.cuda.empty_cache()
-
