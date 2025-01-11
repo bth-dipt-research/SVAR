@@ -20,55 +20,39 @@ dataset = load_dataset("csv", data_files="../data/all_agree_statistics.csv")
 
 best_parameters = {}
 
-# Best fold: 7
-# Accuracy: 0.8571428571428571
-# Nested CV average accuracy: 0.6321428571428571
-# Nested CV std deviation: 0.14965947742683544
 best_parameters["target"] = {
-    "body_learning_rate": 1.3229142620339052e-06,
+    "body_learning_rate": 4.35E-05,
+    "num_epochs": 3,
+    "batch_size": 16,
+    "seed": 24,
+    "max_iter": 162,
+    "solver": "newton-cg"
+}
+
+best_parameters["nature"] = {
+    "body_learning_rate": 2.18E-04,
+    "num_epochs": 3,
+    "batch_size": 16,
+    "seed": 21,
+    "max_iter": 172,
+    "solver": "liblinear"
+}
+
+best_parameters["interpretability"] = {
+    "body_learning_rate": 0.000223843975299691,
+    "num_epochs": 3,
+    "batch_size": 8,
+    "seed": 21,
+    "max_iter": 206,
+    "solver": "liblinear"
+}
+
+best_parameters["reference"] = {
+    "body_learning_rate": 6.56E-05,
     "num_epochs": 4,
     "batch_size": 8,
-    "seed": 31,
-    "max_iter": 57,
-    "solver": "liblinear"
-}
-
-# Best fold: 4
-# Accuracy: 0.8571428571428571
-# Nested CV average accuracy: 0.7357142857142857
-# Nested CV std deviation: 0.0769309258162072
-best_parameters["nature"] = {
-    "body_learning_rate": 0.000955332145145954,
-    "num_epochs": 2,
-    "batch_size": 16,
-    "seed": 34,
-    "max_iter": 155,
-    "solver": "liblinear"
-}
-
-# Best fold: 7
-# Accuracy: 0.8571428571428571
-# Nested CV average accuracy: 0.6678571428571428
-# Nested CV std deviation: 0.08718968296952645
-best_parameters["interpretability"] = {
-    "body_learning_rate": 0.0006596212557964204,
-    "num_epochs": 2,
-    "batch_size": 16,
-    "seed": 2,
-    "max_iter": 215,
-    "solver": "liblinear"
-}
-
-# Best fold: 3
-# Accuracy: 1.0
-# Nested CV average accuracy: 0.8053571428571429
-# Nested CV std deviation: 0.11306547227340522
-best_parameters["reference"] = {
-    "body_learning_rate": 6.158460454793998e-06,
-    "num_epochs": 5,
-    "batch_size": 8,
-    "seed": 10,
-    "max_iter": 298,
+    "seed": 22,
+    "max_iter": 176,
     "solver": "newton-cg"
 }
 
