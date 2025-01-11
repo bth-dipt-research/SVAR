@@ -1,13 +1,25 @@
 """
-The predictor 
+The predictor
+
+Parameter 1: a path to the models for different clasification dimensions.
+Parameter 2: a file containing a list of requirements IDs for wich we do
+             not want to have predictions, g.g. because they have been
+             used for training.
+Parameter 3: The file containing the requirements for which we want to have
+             predictions.
+Parameter 4: The file where to write the result.
 """
 
-from setfit import Trainer, SetFitModel
-import sys, csv, re
+from setfit import SetFitModel
+import sys
+import csv
+import re
 from pathlib import Path
+
 
 def clean(requirements):
     return [re.sub(r'^K\d+ ', '', s) for s in requirements]
+
 
 if len(sys.argv) != 5:
     print("Usage: python predict_agreement.py <models path> <filter.csv> <input.csv> <output.csv>")
@@ -44,14 +56,15 @@ for item in models_path.iterdir():
         agreements = sum(predictions_list)
         total = len(predictions_list)
         print(f'Classified {total} requirements with {agreements} '
-              f'agreements and {total - agreements} disagreements in dimension {dimension}.')
+              f'agreements and {total - agreements} disagreements '
+              f'in dimension {dimension}.')
 
         predictions_list.insert(0, dimension)
-        results = [old_tuple + (prediction,) for old_tuple, prediction in zip(results, predictions_list)]
+        results = [old_tuple + (prediction,) for old_tuple, prediction
+                   in zip(results, predictions_list)]
 
         del model
 
 with open(output_file, mode='w') as file:
     writer = csv.writer(file)
     writer.writerows(results)
-
