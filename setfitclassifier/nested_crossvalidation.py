@@ -1,6 +1,4 @@
 """
-We train the classifier on the agreement data that we collected in pilot 1 and 2. In total, we classified 72 requirements and the agreement statistics are stored in data/all_agree_statistics.csv.
-
 We create a classifier for each dimension. We use nested cross-validation in order to evaluate the performance of the classifier.
 
 Inspiration:
@@ -20,13 +18,27 @@ import gc
 import os
 import logging
 import time
+import argparse
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 slogger = logging.getLogger("setfit")
 ologger = logging.getLogger("optuna")
 
-file_handler = logging.FileHandler(f"../data/agreement_ncv-{datetime.now().strftime("%Y%m%d-%H%M%S")}.log")
+parser = argparse.ArgumentParser()
+parser.add_argument("name", type=str, help="Name of the classification. Used as a prefix for the log file")
+parser.add_argument("logpath", type=str, help="Path to store the log file")
+parser.add_argument("datafile", type=str, help="The csv file with the training data")
+parser.add_argument("dimensions", nargs="*", help="The dimensions in the data file to train on")
+parser.add_argument("-o", "--outer", type=int, default=10, help="The number of outer folds")
+parser.add_argument("-i", "--inner", type=int, default=5, help="The number of inner folds")
+parser.add_argument("-t", "--trials", type=int, default=100, help="The number of trials")
+
+args = parser.parse_args()
+
+logFile = Path(args.logpath) / f'{args.name}_ncv-{datetime.now().strftime("%Y%m%d-%H%M%S")}.log'
+
+file_handler = logging.FileHandler(logFile)
 formatter = logging.Formatter("%(asctime)s - %(name)s - %(funcName)s - %(message)s")
 file_handler.setFormatter(formatter)
 
@@ -37,24 +49,28 @@ ologger.addHandler(file_handler)
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
+args_str = f"Arguments: {vars(args)}"
+print(args_str)
+logger.info(args_str)
+
 # -------------------------------------
 # Instructions
 #
 # 1. Identify with nvidia-smi which GPUs are available
 # 2. Limit, if needed, to run only on a specific GPU, e.g. with index 0,
-#    by invoking CUDA_VISIBLE_DEVICES=0 python nested_crossvalidation.py
+#    by invoking CUDA_VISIBLE_DEVICES=0 python nested_crossvalidation.py ARGS
 # -------------------------------------
 
 
 # -------------------------------------
 # Configuration
 # -------------------------------------
-dataset = load_dataset("csv", data_files="../data/all_agree_statistics.csv", split="train")
-k_outer = 10
-k_inner = 5
-n_trials = 100
+dataset = load_dataset("csv", data_files=args.datafile, split="train")
+k_outer = args.outer
+k_inner = args.inner
+n_trials = args.trials
 
-dimensions = ["target", "nature", "interpretability", "reference"]
+dimensions = args.dimensions
 
 # -------------------------------------
 # Time keeping and progress estimation
