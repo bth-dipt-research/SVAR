@@ -1,18 +1,35 @@
 # About
 
+The classifier is implemented with [SetFit](https://huggingface.co/docs/setfit/index) which uses contrastive learning for fine-tuning a few-shot classifier.
+
+The trainer (both for cross-validation and final model training) expects a file of the following format:
+
+| text | dimension 1 | dimensions 2 | ... | dimension n |
+|------|-------------|--------------|-----|-------------|
+| abc  | value       | value        |     | value       |
+
+A `text` column with the data to classify and `n` dimensions on which the data is classified.
+
+Currently, we provide the following:
+
+ - Nested cross-validation for hyper-parameter tuning and an unbiased estimation of the classifiers performance
+ - Training of the final model
+ - Prediction on unseen data
+
+## Agreement classifier
+
 A classifier, trained on the agreement from the requirements verifiability pilots, that predicts agreements/disagreements in classification. The purpose of this is to split the dataset into:
-  1. requirements where the likelihood of classification agreement is high. For these, only one judge makes the classification.
-  2. requirements where the likelihood of classification agreement is low. For these, all judges discuss the classification.
+
+ 1. requirements where the likelihood of classification agreement is high. For these, only one judge makes the classification.
+ 2. requirements where the likelihood of classification agreement is low. For these, all judges discuss the classification.
 
 We create a classifier for each dimensions: target, nature, interpretability and reference.
-
-The classifier is implemented with [SetFit](https://huggingface.co/docs/setfit/index) which uses contrastive learning for fine-tuning a few-shot classifier.
 
 We train the classifier on the agreement data that we collected in pilot 1 and 2. In total, we classified 72 requirements and the agreement statistics are stored in [data/all_agree_statistics.csv](../data/all_agree_statistics.csv). This file encodes, for each dimension, if all the judges agreed on the classification (`TRUE`) or not (`FALSE`).
 
 We create a classifier for each dimension. We use nested cross-validation in order to evaluate the performance of the classifier.
 
-## Nested cross-validation
+# Nested cross-validation
 
 [Inspiration](https://machinelearningmastery.com/nested-cross-validation-for-machine-learning-with-python/)
 
@@ -24,10 +41,10 @@ Nested cross-validation has a cost: we need to train and evaluate many more mode
 
 The models created in nested cross-validation are thrown away. We do not need them anymore, once we have used them to estimate the performance of the classifier.
 
-### IMPORTANT
+## IMPORTANT
 SetFit has a bug where GPU memory is not released after model training, see this [issue report](https://github.com/huggingface/setfit/issues/567). Currently (January 2025), this issue is not resolved but a [work-around](https://github.com/huggingface/setfit/issues/567#issuecomment-2557352330) exists. Run this [test](./setfit_memory.py) to see if the memory leak is fixed or if you need to apply the work-around.
 
-## Training
+# Training
 
 [Inspiration](https://machinelearningmastery.com/train-final-machine-learning-model/)
 
@@ -39,7 +56,7 @@ If we create *o* outer folds, we have *o* optimal hyper-parameters. There is no 
 
 **Important:** For [training](./train_agreement.py) the final model with SetFit, we use ***all*** available labeled data.
 
-## Prediction
+# Prediction
 
 
 
