@@ -145,7 +145,7 @@ def inner_objective(trial, outer_train_dataset, k_inner):
     features = np.array(outer_train_dataset["text"])
     labels = np.array(outer_train_dataset["label"])
 
-    for fold, (inner_train_idx, inner_val_idx) in enumerate(inner_skf.split(features, labels)):
+    for index, (inner_train_idx, inner_val_idx) in enumerate(inner_skf.split(features, labels), start=1):
         global done_fits
         start_time = time.perf_counter()
         logger.info(f"Fit {done_fits + 1}/{total_fits}")
@@ -153,7 +153,7 @@ def inner_objective(trial, outer_train_dataset, k_inner):
         inner_train_dataset = outer_train_dataset.select(inner_train_idx)
         inner_val_dataset = outer_train_dataset.select(inner_val_idx)
 
-        logger.info(f"Inner fold: {fold + 1}")
+        logger.info(f"Inner fold: {index}")
         logger.info(f"Train size: {len(inner_train_dataset)}")
         logger.info(f"Test size: {len(inner_val_dataset)}")
         logger.info(f"Train class distribution: {np.bincount(inner_train_dataset['label'])}")
@@ -171,7 +171,7 @@ def inner_objective(trial, outer_train_dataset, k_inner):
         trainer.train()
 
         metrics = trainer.evaluate()
-        logger.info(f"Inner evaluation (fold {fold + 1}): {metrics}")
+        logger.info(f"Inner evaluation (fold {index}): {metrics}")
         inner_scores.append(metrics["accuracy"])
 
         del trainer
@@ -198,8 +198,8 @@ def tune_hyperparameters(outer_train_dataset, n_trials, k_inner):
 
 def log_result(dim, result):
     logger.info(f"Best runs found for {dim}:")
-    for fold, run in enumerate(result["best_runs"]):
-        logger.info(f"Best hyperparameters found in fold {fold + 1}: {run}")
+    for index, (run, score) in enumerate(zip(result["best_runs"], result["scores"]), start=1):
+        logger.info(f"Best hyperparameters found in fold {index} with accuracy {score}: {run}")
     logger.info(f"Performance summary for {dim}:")
     logger.info(f"Nested CV average accuracy: {result['avg_accuracy']}")
     logger.info(f"Nested CV std deviation: {result['std_dev']}")
@@ -228,11 +228,11 @@ for dim in dimensions:
     outer_scores = []
     best_runs = []
 
-    for fold, (train_idx, test_idx) in enumerate(outer_skf.split(features, labels)):
+    for index, (train_idx, test_idx) in enumerate(outer_skf.split(features, labels), start=1):
         outer_train_dataset = dim_dataset.select(train_idx)
         outer_test_dataset = dim_dataset.select(test_idx)
 
-        logger.info(f"Outer fold {fold + 1}")
+        logger.info(f"Outer fold {index}")
         logger.info(f"Train size: {len(outer_train_dataset)}")
         logger.info(f"Test size: {len(outer_test_dataset)}")
         logger.info(f"Train class distribution: {np.bincount(outer_train_dataset['label'])}")
@@ -271,7 +271,7 @@ for dim in dimensions:
 
         trainer.train()
         metrics = trainer.evaluate()
-        logger.info(f"Outer evaluation (fold {fold + 1}): {metrics}")
+        logger.info(f"Outer evaluation (fold {index}): {metrics}")
         outer_scores.append(metrics["accuracy"])
 
         del trainer
