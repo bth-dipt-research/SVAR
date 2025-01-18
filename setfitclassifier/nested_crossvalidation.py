@@ -75,7 +75,10 @@ dimensions = args.dimensions
 # -------------------------------------
 # Time keeping and progress estimation
 # -------------------------------------
-total_fits = k_outer * k_inner * n_trials * len(dimensions)
+num_dimensions = len(dimensions)
+inner_fits = k_outer * k_inner * n_trials * num_dimensions
+outer_fits = k_outer * num_dimensions
+total_fits = inner_fits + outer_fits
 done_fits = 0
 fit_durations = []
 
