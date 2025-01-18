@@ -14,6 +14,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 import torch
 import numpy as np
+from scipy import stats
 import gc
 import os
 import logging
@@ -287,15 +288,35 @@ for dim in dimensions:
         logger.info(f"Estimated time left: {human_readable_time(estimated_time_left())}.")
         logger.info(f"Estimated finish time: {estimated_time_finished().strftime("%Y-%m-%d %H:%M:%S")}.")
 
+    outer_scores = np.round(outer_scores, decimals=3)
     results[dim] = {
         "best_runs": best_runs,
-        "avg_accuracy": np.mean(outer_scores),
-        "std_dev": np.std(outer_scores)
+        "scores": outer_scores,
+        "avg_accuracy": np.round(np.mean(outer_scores), decimals=3),
+        "std_dev": np.round(np.std(outer_scores), decimals=3)
     }
 
     log_result(dim, results[dim])
 
-logger.info("------ Final results ------")
+logger.info("------ Parameters for final model training ------")
 for dim in results:
-    log_result(dim, results[dim])
+    result = results[dim]
+    best_runs = result["best_runs"]
 
+    learning_rate = np.mean([r["body_learning_rate"] for r in best_runs])
+    num_epochs = np.round(np.mean([r["num_epochs"] for r in best_runs]))
+    batch_size = stats.mode([r["batch_size"] for r in best_runs])
+    seed = np.round(np.mean([r["seed"] for r in best_runs]))
+    max_iter = np.round(np.mean([r["max_iter"] for r in best_runs]))
+    solvers = [r["solver"] for r in best_runs]
+    unique_solvers, counts = np.unique(solvers, return_counts=True)
+    solver = unique_solvers[np.argmax(counts)]
+
+    logger.info(f"Dimension: {dim}")
+    logger.info(f'Body learning rate: {learning_rate}')
+    logger.info(f'Epochs: {num_epochs}')
+    logger.info(f'Batch size: {batch_size.mode}')
+    logger.info(f'Seed: {seed}')
+    logger.info(f'Max iter: {max_iter}')
+    logger.info(f'Solver: {solver}')
+    logger.info("------")
