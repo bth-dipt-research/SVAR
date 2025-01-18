@@ -2,7 +2,7 @@
 
 The classifier is implemented with [SetFit](https://huggingface.co/docs/setfit/index) which uses contrastive learning for fine-tuning a few-shot classifier.
 
-The trainer (both for cross-validation and final model training) expects a file of the following format:
+The trainer (both for cross-validation and final model training) expects a CSV file of the following format:
 
 | text | dimension 1 | dimensions 2 | ... | dimension n |
 |------|-------------|--------------|-----|-------------|
