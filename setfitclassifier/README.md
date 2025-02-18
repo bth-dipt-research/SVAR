@@ -78,9 +78,9 @@ These are all steps needed to run the python notebook with the [initial experime
    `conda install -c conda-forge nb_conda_kernels`
 5. Create a new conda environment and switch to it
 
-   `conda create --name agreementclassifier pip ipykernel`
+   `conda create --name setfitclassifier pip ipykernel`
 
-    `conda activate agreementclassifier`
+    `conda activate setfitclassifier`
 6. Install required packages
 
    `pip install -r requirements.txt`
