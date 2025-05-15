@@ -6,20 +6,25 @@ https://machinelearningmastery.com/nested-cross-validation-for-machine-learning-
 """
 
 import optuna
-from typing import Dict, Union, Any
+from typing import Dict
+from typing import Any
 from setfit import TrainingArguments, SetFitModel, Trainer
-from datasets import load_dataset, DatasetDict
+from datasets import load_dataset
 from sklearn.model_selection import StratifiedKFold
+from sklearn.metrics import f1_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+from sklearn.metrics import accuracy_score
 from pathlib import Path
 from datetime import datetime, timedelta
 import torch
 import numpy as np
-from scipy import stats
+import statistics as st
 import gc
-import os
 import logging
 import time
 import argparse
+import warnings
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -34,6 +39,8 @@ parser.add_argument("dimensions", nargs="*", help="The dimensions in the data fi
 parser.add_argument("-o", "--outer", type=int, default=10, help="The number of outer folds")
 parser.add_argument("-i", "--inner", type=int, default=5, help="The number of inner folds")
 parser.add_argument("-t", "--trials", type=int, default=100, help="The number of trials")
+parser.add_argument("-m", "--metric", type=str, default="f1", help="The evaluation metric for the hyperparameter tuning process. Can be f1, precision, recall, or accuracy.")
+parser.add_argument("-a", "--average", type=str, help="For f1, precision and recall, the averaging strategy (micro, macro, weighted) can be specified.")
 
 args = parser.parse_args()
 
@@ -47,7 +54,6 @@ logger.addHandler(file_handler)
 slogger.addHandler(file_handler)
 ologger.addHandler(file_handler)
 
-import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 args_str = f"Arguments: {vars(args)}"
@@ -73,6 +79,8 @@ n_trials = args.trials
 
 dimensions = args.dimensions
 
+eval_metric = args.metric
+eval_average = args.average
 # -------------------------------------
 # Time keeping and progress estimation
 # -------------------------------------
@@ -83,14 +91,18 @@ total_fits = inner_fits + outer_fits
 done_fits = 0
 fit_durations = []
 
+
 def avg_fit_durations():
-    return np.mean(fit_durations) if len(fit_durations) > 0 else 100
+    return st.mean(fit_durations) if len(fit_durations) > 0 else 100
+
 
 def estimated_time_left():
     return avg_fit_durations() * (total_fits - done_fits)
 
+
 def estimated_time_finished():
     return datetime.now() + timedelta(seconds=estimated_time_left())
+
 
 def human_readable_time(seconds):
     units = [
@@ -125,16 +137,17 @@ def model_init(params: Dict[str, Any]) -> SetFitModel:
 
     return SetFitModel.from_pretrained("KBLab/sentence-bert-swedish-cased", **params)
 
+
 # -------------------------------------
 # Function for inner hyperparameter tuning
 # -------------------------------------
 def inner_objective(trial, outer_train_dataset, k_inner):
     # Define search space for hyperparameters
     training_args = TrainingArguments(
-        body_learning_rate = trial.suggest_float("body_learning_rate", 1e-6, 1e-3, log=True),
-        num_epochs = trial.suggest_int("num_epochs", 1, 5),
-        batch_size = trial.suggest_categorical("batch_size", [8, 16]),
-        seed = trial.suggest_int("seed", 1, 40)
+        body_learning_rate=trial.suggest_float("body_learning_rate", 1e-6, 1e-3, log=True),
+        num_epochs=trial.suggest_int("num_epochs", 1, 3),
+        batch_size=trial.suggest_categorical("batch_size", [16, 32]),
+        seed=trial.suggest_int("seed", 1, 40)
     )
 
     model_params = {
@@ -163,20 +176,25 @@ def inner_objective(trial, outer_train_dataset, k_inner):
         logger.info(f"Train class distribution: {np.bincount(inner_train_dataset['label'])}")
         logger.info(f"Validation class distribution: {np.bincount(inner_val_dataset['label'])}")
 
+        metric_kwargs = None
+        if eval_metric != 'accuracy':
+            metric_kwargs = {"average": eval_average}
+
         trainer = Trainer(
             model_init=lambda: model_init(model_params),
             args=training_args,
             train_dataset=inner_train_dataset,
             eval_dataset=inner_val_dataset,
-            metric="accuracy"
+            metric=eval_metric,
+            metric_kwargs=metric_kwargs
         )
 
         # Train with the candidate hyperparameters()
         trainer.train()
 
         metrics = trainer.evaluate()
-        logger.info(f"Inner evaluation (fold {index}): {metrics}")
-        inner_scores.append(metrics["accuracy"])
+        logger.info(f"Inner evaluation (fold {index}): {eval_metric}={metrics[eval_metric]:.3f}")
+        inner_scores.append(metrics[eval_metric])
 
         del trainer
         torch.cuda.empty_cache()
@@ -185,11 +203,10 @@ def inner_objective(trial, outer_train_dataset, k_inner):
         fit_durations.append(end_time - start_time)
         done_fits = done_fits + 1
         logger.info(f"Estimated time left: {human_readable_time(estimated_time_left())}.")
-        logger.info(f"Estimated finish time: {estimated_time_finished().strftime("%Y-%m-%d %H:%M:%S")}.")
+        logger.info(f"Estimated finish time: {estimated_time_finished().strftime('%Y-%m-%d %H:%M:%S')}.")
 
-
-    avg = np.mean(inner_scores)
-    logger.info(f"Across inner fold average accuracy: {avg}")
+    avg = st.mean(inner_scores)
+    logger.info(f"Across inner fold average {eval_metric} ({eval_average}): {avg:.3f}")
 
     # Return the average accuracy across inner folds
     return avg
@@ -203,10 +220,61 @@ def tune_hyperparameters(outer_train_dataset, n_trials, k_inner):
 def log_result(dim, result):
     logger.info(f"Best runs found for {dim}:")
     for index, (run, score) in enumerate(zip(result["best_runs"], result["scores"]), start=1):
-        logger.info(f"Best hyperparameters found in fold {index} with accuracy {score}: {run}")
+        logger.info(f"Best hyperparameters found in fold {index} with {eval_metric} ({eval_average}) {score}: {run}")
     logger.info(f"Performance summary for {dim}:")
-    logger.info(f"Nested CV average accuracy: {result['avg_accuracy']}")
-    logger.info(f"Nested CV std deviation: {result['std_dev']}")
+    logger.info(f"Nested CV results {eval_metric} ({eval_average}): {result_stats(result['scores'])}")
+
+
+def evaluate_outer(y_pred, y_true):
+    return {
+        "f1_micro": f"{f1_score(y_true, y_pred, average='micro'):.3f}",
+        "f1_macro": f"{f1_score(y_true, y_pred, average='macro'):.3f}",
+        "f1_weighted": f"{f1_score(y_true, y_pred, average='weighted'):.3f}",
+        "precision_micro": f"{precision_score(y_true, y_pred, average='micro'):.3f}",
+        "precision_macro": f"{precision_score(y_true, y_pred, average='macro'):.3f}",
+        "precision_weighted": f"{precision_score(y_true, y_pred, average='weighted'):.3f}",
+        "recall_micro": f"{recall_score(y_true, y_pred, average='micro'):.3f}",
+        "recall_macro": f"{recall_score(y_true, y_pred, average='macro'):.3f}",
+        "recall_weighted": f"{recall_score(y_true, y_pred, average='weighted'):.3f}",
+        "accuracy": f"{accuracy_score(y_true, y_pred):.3f}"
+    }
+
+
+def result_stats(scores):
+    f1_micro = [float(d["f1_micro"]) for d in scores]
+    f1_macro = [float(d["f1_macro"]) for d in scores]
+    f1_weighted = [float(d["f1_weighted"]) for d in scores]
+    precision_micro = [float(d["precision_micro"]) for d in scores]
+    precision_macro = [float(d["precision_macro"]) for d in scores]
+    precision_weighted = [float(d["precision_weighted"]) for d in scores]
+    recall_micro = [float(d["recall_micro"]) for d in scores]
+    recall_macro = [float(d["recall_macro"]) for d in scores]
+    recall_weighted = [float(d["recall_weighted"]) for d in scores]
+    accuracy = [float(d["accuracy"]) for d in scores]
+
+    return {
+        "f1_micro_avg": f"{st.mean(f1_micro):.3f}",
+        "f1_micro_stdev": f"{st.stdev(f1_micro):.3f}",
+        "f1_macro_avg": f"{st.mean(f1_macro):.3f}",
+        "f1_macro_stdev": f"{st.stdev(f1_macro):.3f}",
+        "f1_weighted_avg": f"{st.mean(f1_weighted):.3f}",
+        "f1_weighted_stdev": f"{st.stdev(f1_weighted):.3f}",
+        "precision_micro_avg": f"{st.mean(precision_micro):.3f}",
+        "precision_micro_stdev": f"{st.stdev(precision_micro):.3f}",
+        "precision_macro_avg": f"{st.mean(precision_macro):.3f}",
+        "precision_macro_stdev": f"{st.stdev(precision_macro):.3f}",
+        "precision_weighted_avg": f"{st.mean(precision_weighted):.3f}",
+        "precision_weighted_stdev": f"{st.stdev(precision_weighted):.3f}",
+        "recall_micro_avg": f"{st.mean(recall_micro):.3f}",
+        "recall_micro_stdev": f"{st.stdev(recall_micro):.3f}",
+        "recall_macro_avg": f"{st.mean(recall_macro):.3f}",
+        "recall_macro_stdev": f"{st.stdev(recall_macro):.3f}",
+        "recall_weighted_avg": f"{st.mean(recall_weighted):.3f}",
+        "recall_weighted_stdev": f"{st.stdev(recall_weighted):.3f}",
+        "accuracy_avg": f"{st.mean(accuracy):.3f}",
+        "accuracy_stdev": f"{st.stdev(accuracy):.3f}"
+    }
+
 
 #----------------------------------------------------------
 # Loop over dimensions, on each we perform cross-validation
@@ -270,13 +338,13 @@ for dim in dimensions:
             args=best_training_args_in_fold,
             train_dataset=outer_train_dataset,
             eval_dataset=outer_test_dataset,
-            metric="accuracy"
+            metric=evaluate_outer
         )
 
         trainer.train()
         metrics = trainer.evaluate()
         logger.info(f"Outer evaluation (fold {index}): {metrics}")
-        outer_scores.append(metrics["accuracy"])
+        outer_scores.append(metrics)
 
         del trainer
         torch.cuda.empty_cache()
@@ -286,14 +354,12 @@ for dim in dimensions:
         fit_durations.append(end_time - start_time)
         done_fits = done_fits + 1
         logger.info(f"Estimated time left: {human_readable_time(estimated_time_left())}.")
-        logger.info(f"Estimated finish time: {estimated_time_finished().strftime("%Y-%m-%d %H:%M:%S")}.")
+        logger.info(f"Estimated finish time: {estimated_time_finished().strftime('%Y-%m-%d %H:%M:%S')}.")
 
-    outer_scores = np.round(outer_scores, decimals=3)
+
     results[dim] = {
         "best_runs": best_runs,
         "scores": outer_scores,
-        "avg_accuracy": np.round(np.mean(outer_scores), decimals=3),
-        "std_dev": np.round(np.std(outer_scores), decimals=3)
     }
 
     log_result(dim, results[dim])
@@ -303,20 +369,21 @@ for dim in results:
     result = results[dim]
     best_runs = result["best_runs"]
 
-    learning_rate = np.mean([r["body_learning_rate"] for r in best_runs])
-    num_epochs = np.round(np.mean([r["num_epochs"] for r in best_runs]))
-    batch_size = stats.mode([r["batch_size"] for r in best_runs])
-    seed = np.round(np.mean([r["seed"] for r in best_runs]))
-    max_iter = np.round(np.mean([r["max_iter"] for r in best_runs]))
+    learning_rate = st.mean([r["body_learning_rate"] for r in best_runs])
+    num_epochs = st.mean([r["num_epochs"] for r in best_runs])
+    batch_size = st.mode([r["batch_size"] for r in best_runs])
+    seed = st.mean([r["seed"] for r in best_runs])
+    max_iter = st.mean([r["max_iter"] for r in best_runs])
     solvers = [r["solver"] for r in best_runs]
     unique_solvers, counts = np.unique(solvers, return_counts=True)
     solver = unique_solvers[np.argmax(counts)]
 
     logger.info(f"Dimension: {dim}")
+    logger.info(f"Nested CV results optmizied for {eval_metric} ({eval_average}): {result_stats(result['scores'])}")
     logger.info(f'Body learning rate: {learning_rate}')
-    logger.info(f'Epochs: {num_epochs}')
-    logger.info(f'Batch size: {batch_size.mode}')
-    logger.info(f'Seed: {seed}')
-    logger.info(f'Max iter: {max_iter}')
+    logger.info(f'Epochs: {num_epochs:.0f}')
+    logger.info(f'Batch size: {batch_size}')
+    logger.info(f'Seed: {seed:.0f}')
+    logger.info(f'Max iter: {max_iter:.0f}')
     logger.info(f'Solver: {solver}')
     logger.info("------")
