@@ -162,5 +162,8 @@ cython_debug/
 # Lock files
 .~lock*
 
+# API keys
+keys.py
+
 confidential_data
 models

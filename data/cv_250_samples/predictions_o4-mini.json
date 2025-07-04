@@ -1,0 +1,2502 @@
+[
+    {
+        "id": "K56589",
+        "requirement": "Genomföringar och anslutningar ska vara utformade så att två stycken 95 mm² 3-fas kablar kan anslutas.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K49368",
+        "requirement": "Kontakt i motorkrets ska kunna sluta och bryta ström hos fastbromsad motor.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K99788",
+        "requirement": "I ärende för kontroll ska följande uppgifter anges: · Trafikverkets projektnummer och projektnamn · Trafikverkets konstruktionsnamn och konstruktionsnummer på den geokonstruktion som avses · vilka dokument och versioner av dessa som avses · länk till lagringsplats för handlingar som lagts in i databas · vilken typ av kontroll som avses · det av handling upprättande företagets namn · datering · daterad underskrift · kontaktuppgift för Trafikverkets projektledare · kontaktuppgift för Trafikverkets kontraktspart · kontaktuppgift för Trafikverkets teknikstöd för geoteknik · kontaktuppgift för det av handling upprättande företagets uppdragsledare K99789 Handling i ärende för kontroll ska vara kvalitetssäkrad, komplett och färdig.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K55818",
+        "requirement": "Säkerhetsutrustning ska innefatta objekt enligt tabell 1.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K46926",
+        "requirement": "Dörrar av stål ska vara målade i kulör ljusgrå enligt tillverkarens standard.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K195661",
+        "requirement": "Fundament som inte står i skydd av vägräcke eller dylikt ska placeras så att inte någon del av fundamentets överyta blir belägen högre än 0,1 m över färdig mark.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K151598",
+        "requirement": "Slänter och koner ska vara fria från buskar och sly, med en diameter som är mindre än 0,10 m, och som är högre än 0,5 m över markytan.",
+        "classification": {
+            "target": "Product",
+            "nature": "Mixed",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K157806",
+        "requirement": "Jordens halt av stora block (> 630 mm) ska anges om den bedöms överstiga 1 viktprocent.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K12652",
+        "requirement": "Märkskyltar för MCS-portaler ska vara 450 mm breda.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K217480",
+        "requirement": "Radarenheten ska med vinklingsbara standardfästen kunna monteras på både vägg, hörn och stolpe (diameter 80-150mm).",
+        "classification": {
+            "target": "Product",
+            "nature": "Mixed",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K135247",
+        "requirement": "För bro med väg, gång- och cykeltrafik ska krav enligt \"Vägars och gators utformning\" (Trafikverket) uppfyllas.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K48226",
+        "requirement": "Kapslingen ska vara utförd i rostfritt stål eller målad aluminium.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K52338",
+        "requirement": "Apparat i golvskåp ska vara monterad lägst 600 mm över skåps botten.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K29501",
+        "requirement": "Skylt med texten LIVSFARA förbjudet att beträda spårområdet ska ha dimension 200x632 mm.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K33008",
+        "requirement": "Om det finns biljettvaliderare, ska minst en av dessa ha en fri passageväg med en minimibredd på 90 cm.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K63960",
+        "requirement": "Kontakttrådarna ska vara hophållda med hjälp av en 2 500 mm lång stödskena enligt ritning 803 047.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K38383",
+        "requirement": "Standardavvikelse ska beräknas för signaler filtrerade till våglängdsområdet D1 325 m.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K59785",
+        "requirement": "Bärlinan ska vara Cu 70 mm2 enligt TDOK 2014:0868 BVS 543.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K34765",
+        "requirement": "För svetsspalt 68 mm ska termitform L68 användas.",
+        "classification": {
+            "target": "Process",
+            "nature": "Mixed",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K157858",
+        "requirement": "Vid breddning av befintlig väg får beräknad tjällyftning på breddad del skilja maximalt 15 mm från beräknad tjällyftning på befintlig väg.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K35282",
+        "requirement": "Stolpens ytterdiameter ska vara 76 mm.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K61510 ",
+        "requirement": "Nedhänget på spannmitt ska vara 30 mm vid 60 m spannlängd.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K135668",
+        "requirement": "Vid dimensionering av förankringsanordning ska hänsyn tas till avrostning.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K32998",
+        "requirement": "Trösklar på en hinderfri gångväg ska vara kontrasterande mot den omgivande golvytan.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K160118",
+        "requirement": "En skredvarningsförsignal ska vara försedd med en fyrkantig gul skylt med texten Fsi skredvarning och tillhörande skredvarningsstopplyktas beteckning.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K218110",
+        "requirement": "Signalanläggningar som inte är placerade spårnära ska vara tillgängliga för underhåll vid drift.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K42306",
+        "requirement": "Bromsprovaren ska vara med instrumentenhet som visar bromskraft.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K53647",
+        "requirement": "Vid märkning av grupptillhörighet ska Trafikverkets skyltar med följande artikelnummer vara använda: · 04 29 601 - Gruppmarkeringsskylt BV 2802, två tecken.",
+        "classification": {
+            "target": "Product",
+            "nature": "Mixed",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K46568",
+        "requirement": "Installationsgolvets bärande konstruktion får inte försämras om samtliga golvplattor lyfts bort.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K111674",
+        "requirement": "Konsekvensbedömning ska genomföras med den återkomsttid som gäller för den sårbara punkt som kan påverkas.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K126068",
+        "requirement": "Materiel som används till skyddsjordning ska bestå utav produkter godkända av Trafikverket.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K62414",
+        "requirement": "Innan transformator tas i drift ska följande uppfyllas: · överslagsvärdet ska vara minst 60 kV/ 2,5mm.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K73142",
+        "requirement": "Dialogfönster för omformare av typen HOG ska innehålla jordslutare F-J-G.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K134929",
+        "requirement": "Ändskärm ska ges sådan höjd att följande uppfylls: · Avstånd från intilliggande brobaneplattas underyta till ändskärms underyta är ? 0,60 m.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K159231",
+        "requirement": "Lägesvisare ska vara utförd för visning av mellanläge.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K209219",
+        "requirement": "I samband med förläggning av kablar, optorör och dukter i mark i Trafikverkets kabelanläggningar ska  förutom kraven i detta avsnitt  kraven i SS 424 14 37 uppfyllas.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K37489",
+        "requirement": "Avstånd mellan skarv och rälände får inte understiga 1,5 m.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K158712",
+        "requirement": "Sammanfattningen av resultatet från bärighetsberäkning ska även innehålla uppgift om tillåten trafiklast.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K35144",
+        "requirement": "Mätning av ytjämnhet ska utföras minst en gång per skift.",
+        "classification": {
+            "target": "Process",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K208840",
+        "requirement": "Inför felavhjälpning i Trafikverkets optokabelanläggningar ska det finnas vedertagna rutiner för hantering av kabeltyper med olika antal fibrer.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K43146",
+        "requirement": "Enheter i lokala styrutrustningar för öppningsbar bro, vägoperativ miljö, ska så långt som möjligt utgöras av standardkomponenter för att möjliggöra en hållbar reservdelshållning över tid.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K52675",
+        "requirement": "Fågelskyddsavståndet mellan utliggare och annan jordad anläggningsdel än kontaktledningsstolpen ska upprätthållas på anläggningar som är fågelsäkrade.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K71729",
+        "requirement": "Öppningsbar bro, vägoperativ miljö, ska vara försedd med avstängningsanordning inklusive Rött blinkande ljus för avstängningsanordningar och varningsskyltar.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K27598",
+        "requirement": "Styrapparater i vägtrafiksignalsystem ska vid funktionsläge manuell styrning vara med fasbilder för oberoende styrning.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K126371",
+        "requirement": "För en säker uppstart av PLS-programmet ska en kallstart genomföras genom att man först gör en minnesreset och sedan start av CPU-enheten enligt nedan Minnesreset förutsätter att omkopplaren är ställd i läge STOP och att lysdioden på CPU- enheten lyser rött.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K44033",
+        "requirement": "Egentyngd från en installation som är fast monterad och säkert lastbestämd ska i en varaktig dimensioneringssituation betraktas som permanent last.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K48993",
+        "requirement": "Ställverk ska vara utförd i lägst IAC klass FL, åtkomst av front och gavlar vid normal uppställning i ställverksrum vilket förutsätter montage mot vägg eller dylikt alternativt hinder för åtkomst av baksidan av ställverket.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K209197",
+        "requirement": "I samband med projektering av ny kommunikationskabel och nya dukter för kommunikationskabel i Trafikverkets kabelanläggningar ska anläggningsnummer begäras från Trafikverket IKT via telekombestallning@trafikverket.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K195485",
+        "requirement": "En övergångs trafiksäkerhetsegenskaper ska vara verifierade på ett av följande sätt: ·krockprovad enligt SS-ENV 1317-4 eller prEN 1317-4 metod A ·simulerad enligt prEN 1317-4 metod B1 ·utformad enligt principer angivna i prEN 1317-4 metod B2 eller B3 ·utformad utgående från skillnader i dynamisk utböjning vid TB11-prov enligt SS-EN 1317-2.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K3567",
+        "requirement": "Kameraenheter ska vara med automatisk bildstabilisering som kompenserar för rörelser hos kameraenhet.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K57726",
+        "requirement": "Minst åtta av de senaste händelserna, ska lagras i reläskyddsterminalen.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K35826",
+        "requirement": "Banunderbyggnad och undergrund ska uppfylla krav i avsnitt 7.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K65256",
+        "requirement": "Funktionen för NÄR/FJÄRR ska finnas och vara realiserad i elektromekanisk teknik.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K134576",
+        "requirement": "Godstjocklek ska vara ? 4,0 mm.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K68280",
+        "requirement": "Erfarenheterna ska vara aktuella vid ansökningstillfället, dokumenteras i anpassad CV.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K111550",
+        "requirement": "Vid dimensionering av magasin ska beaktas den sedimentering som kan ske före magasinet.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K29243",
+        "requirement": "Tillträdesskydd ska förhindra obehörigt spårbeträdande, olaga intrång, stöld, skadegörelse, sabotage och anlagd brand vid trafikplats med godshantering.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K56651",
+        "requirement": "Dokumentation ska uppfylla krav enligt TDOK 2016:0407 Data om järnvägsanläggningen.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K2770",
+        "requirement": "Överkant på bomarm i avstängningsanordningar vid öppningsbar bro, vägoperativ miljö, ska vara 0,9  1,1 m över körbanan i stängt läge.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K162032",
+        "requirement": "Datakommunikationsenhet ska vara installerad i kontrollskåp.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K54610",
+        "requirement": "Värmeisolering ska även utgöra skydd mot oavsiktlig beröring av heta delar.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K135135",
+        "requirement": "För vägbro samt gång- och cykelbro ska ytavlopps överyta förläggas 10 mm under beläggnings överyta.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K210928",
+        "requirement": "IP-baserad ändutrustning som ska anslutas till Trafikverkets operativa nät ska fungera som en fullvärdig IP host, specificerad i gällande RFC:er från IETF.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K109864",
+        "requirement": "För vägar med obundna slitlager ska grusslitlager enligt AMA Anläggning läggas ut med lagertjockleken 5090 mm.",
+        "classification": {
+            "target": "Product",
+            "nature": "Mixed",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K124919",
+        "requirement": "Vid ibruktagande- och kontrollbesiktning av reläställverk, ska generella kontroller utföras.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K58188",
+        "requirement": "Distansskydd ska ha minst tre zoner i riktning framåt och minst tre zoner i riktning bakåt.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K68257",
+        "requirement": "Granskarens eller besiktningsmannens chef ska ansvara för att initiera återkallelse av behörighet.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K53275",
+        "requirement": "Avspänningen ska klara de krafter som kan uppstå.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K128543",
+        "requirement": "Varje växel ska vara belyst så att ljuset sprids jämnt mellan yttersta växelpunkterna.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K9763",
+        "requirement": "Under varje provningsperiod ska provningsmöten hållas.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K42402",
+        "requirement": "Med tryckluftsbromsade fordon i bromsprovare, läge manuell, ska tiden för medelvärdesbildning vara 5,3 s vid en nominell provningshastighet av 2 km/h.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K43635",
+        "requirement": "Dörr mellan trafikutrymme och utrymningsväg ska vara lätt identifierbar som nödutgång.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K158156",
+        "requirement": "Kamerabevakning ska följa TDOK 2019:0390 Kamerabevakning i Trafikverket.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K52614",
+        "requirement": "Stagskruven får inte vara övertäckt.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K135115",
+        "requirement": "Översida av brobaneplattas tätskikt ska avvattnas.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K44387",
+        "requirement": "Dräneringsledning ska vara försedd med dräneringsbrunnar och rensbrunnar.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K34736",
+        "requirement": "Ultraljudskontroll ska utföras av växeltungan sex månader efter genomfört svetsarbete.",
+        "classification": {
+            "target": "Process",
+            "nature": "Mixed",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K99912",
+        "requirement": "Beskrivning av material, utförande och kontroll ska upprättas enligt BSAB-struktur.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K125522",
+        "requirement": "Tilläggsskylt Stopp vid plankorsning tillhörande orienteringstavla, ska ha följande mått 645 x 510 millimeter.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K36859",
+        "requirement": "Dokumentation av kontroll på montageplats ska tillhandahållas enligt avsnitt 8.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K46339",
+        "requirement": "Oljegropar ska uppfylla kraven i SS-EN 61936-1 K46339 Med avsteg från SS-EN 61936-1 får uppsamlingstank ansluten till transformatorfundament inte förekomma.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K160213",
+        "requirement": "Förvarningstavla ska vara placerad minst 1300 meter före den punkt där hastighetsnedsättningen börjar och enligt förbeskedsavstånd.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K160114",
+        "requirement": "En skredvarningsstopplykta ska vara försedd med en fyrkantig gul skylt med texten Skredvarning och stopplyktans beteckning.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K44181",
+        "requirement": "Bergbultar ingående i bärande huvudsystem ska ha en stångdiameter på minst 20 mm.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K2763",
+        "requirement": "Märkskyltars monteringsanordningar får inte vara i kontakt med annat material på sådant sätt att materialförstöring kan äga rum (galvanisk korrosion).",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K29951",
+        "requirement": "Växelsliper och långsliper får inte kapas mer än att avstånd mellan rälens farkant och sliperände är minst 280 mm, se figur K8.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K54575",
+        "requirement": "Överfyllningsskyddet ska vara en standardiserad anordning.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K197585",
+        "requirement": "Lastcell och viktindikator till fast våganläggning vid trafikkontrollplats ska vara med sådan uppbyggnad/precision att en lastcell och/eller en viktindikator kan bytas under pågående kröningsperiod utan att en fullständig kröning av vågen är nödvändig.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K127197",
+        "requirement": "Konstruktionsredovisning ska inledas med konstruktionsstartmöte.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K73711",
+        "requirement": "Material och varor i bullerskyddsskärm med tillhörande grundkonstruktion ska dokumenteras enligt krav i TDOK 2012:22 Material och varor - krav och kriterier avseende innehåll av farliga ämnen.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K36748",
+        "requirement": "Räler ? 15 m ska hanteras med lyftok.",
+        "classification": {
+            "target": "Process",
+            "nature": "Mixed",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K195427",
+        "requirement": "Räckets egenbredd får inte överstiga 0,30 m.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K35086",
+        "requirement": "Ny pinnlödning ska sättas fast om anslutning eller lodpinne lossnar.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K63078",
+        "requirement": "Sektionsutliggare i stolpe ska vara utformade enligt typritning i tabell 8.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K195365",
+        "requirement": "En vägbanereflektor ska vara försedd med fysisk CE-märkning enligt SS-EN 1463-1.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K109676",
+        "requirement": "Stensläpp från beläggning får inte förekomma.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K36288",
+        "requirement": "Rälreglering ska utföras över hela arbetssträckan plus minst en rällängd på anslutande sektioner på båda sidor om arbetssträckan.",
+        "classification": {
+            "target": "Process",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K37419",
+        "requirement": "Räl med vertikalt längsgående fel ska skrotas i sin helhet när ett (1) fel påträffas.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K131013",
+        "requirement": "Vid möte ska handlingsförteckning över konstruktionsredovisningens delar gås igenom.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K53178",
+        "requirement": "Strömbegränsningstavla ska vara monterad vid skyddssektion utförd som enkel sektionsisolator med jordelektrod.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K53280",
+        "requirement": "Kabeln får inte ligga klämd mot annat än kabelfästen.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K45678",
+        "requirement": "För grundläggande förreglingskrav på jordningskopplare monterad på frånskiljande effektbrytare ska krav i TTRVINFRA-00128 Elkraftanläggning Omformarstation och transformatorstation 3-fas 50 Hz och 1-fas 16 2/3 Hz utomhusställverk med konstruktionsspänning mellan 52 kV och 145 kV .",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K126641",
+        "requirement": "För växel med rörlig korsningsspets ska lokalställare vara försedd med märkskylt (dekal) \"Rörlig korsning\".",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K191128",
+        "requirement": "BGE PSA_LTO ska bestå av en fast och en styrbar balis.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K29404",
+        "requirement": "Hänglåsbeslag ska fixeras i höjdled genom fastsvetsning.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K52960",
+        "requirement": "Kabelns märkning och position ska framgå av förvaltningshandling.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K160119",
+        "requirement": "Skredvarningsförsignalen ska normalt vara släckt men ska visa gult blinkande sken när efterföljande skredvarningsstopplykta är tänd.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K82808",
+        "requirement": "Skyddsklass 2 enligt SSF 200 gäller för hela anläggningens omslutningsyta.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K125486",
+        "requirement": "Kontrollsignalen ska vara försedd med vit märkskylt, mått 350 x 350 millimeter.",
+        "classification": {
+            "target": "Product",
+            "nature": "Mixed",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K111941",
+        "requirement": "Utspetsning ska utföras för självfallsledning i tjälfarlig jord om måttet d, enligt TDOK 2011:264 TRVK Väg, avsnitt 3.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K209959",
+        "requirement": "I samband med planering av framföringsväg utanför banvall ska erforderliga tillstånd för kommande kabelförläggning inhämtas från berörda fastighetsägare.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K4085",
+        "requirement": "Budskapsytan (framsidan) för lysande VMS ska vara utförd med svart kulör, RAL 9005 med glans < 1 %.",
+        "classification": {
+            "target": "Product",
+            "nature": "Mixed",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K5363",
+        "requirement": "Spalter mellan prismorna i kontinuerlig VMS får inte vara större än 5 % av diametern på en cirkel som tangerar prismans tre hörn.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K111975",
+        "requirement": "Pumpbrunn, apparatskåp och trycklednings nedströms ändpunkt ska placeras så att drift och underhåll underlättas.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K157972",
+        "requirement": "Utspetsningslängd ska bestämmas enligt avsnitt 15.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K195579",
+        "requirement": "Fallskydd på kanten av en bro och broliknande konstruktion eller i omedelbar anslutning till stup ska uppfylla krav enligt Krav i TRVINFRA-00227 Bro och broliknande konstruktion, Byggande.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K34677",
+        "requirement": "Svetsobjekt ska stämplas med svetsarnummer på stämplingslägen enligt avsnitt 5.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K34312",
+        "requirement": "Stationsnamnskyltar på plattformar ska sättas upp på ett avstånd av 30 ± 10 meter från plattformens yttersta U-skyltar.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K44037",
+        "requirement": "För en järnvägstunnel får endast last från betongkonstruktionens egentyngd samt last av fyllning och underballast medräknas.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K118437",
+        "requirement": "För att bli behörig ibruktagandebesiktningsman banöverbyggnad ska kraven i detta kapitel uppfyllas.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K4657",
+        "requirement": "Funktionsyta för manöver i paneler med funktionsytor i form av flikar ska vara anpassad till möjliga funktioner för aktuellt objekt.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K74041",
+        "requirement": "Kopparbaserad datakommunikationskabel ska vara av industrikvalitet och vara utförd i CAT-5e eller bättre och vara utrustad med RJ-45 kontakter.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K62481",
+        "requirement": "Bärtrådar får inte placeras närmare än 6 m från närmsta upphängningspunkt.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K128820",
+        "requirement": "Besiktningsansvarig ska: · säkerställa att besiktningsmän/bankontrollanter uppfyller de krav som ställs.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K73572",
+        "requirement": "Port i bullerskyddsskärm ska förses med lås som förhindrar obehörig öppning.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K47725",
+        "requirement": "Apparat ska vara märkt med skylt med uppgift om apparatnummer och benämning.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K58631",
+        "requirement": "Växelvärmeskåp för alternativ 1:1 ska vara bestyckat enligt tabell 9.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K74107",
+        "requirement": "Skalan på visarinstrument för nödfrånkopplingsslingas viloström ska vara 0 - 20 mA.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K135133",
+        "requirement": "Ytavloppsrör ska dras ned ? 100 mm under huvudbalks underyta.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K126224",
+        "requirement": "Baliskabelns skärm ska vara ansluten till stommen.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K56941",
+        "requirement": "Sektionslängd får inte överstiga 570 m vid fastavspänning.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K34242",
+        "requirement": "I stationshus ska det finnas markeringsskyltar för de objekt som finns i stationshuset.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K210506",
+        "requirement": "Den tryckkurva som ska tas på berörd kommunikationskabel efter ombyggnation av Trafikverkets kopparkabelanläggningar får inte uppvisa någon försämring jämfört med den tryckkurva som togs före ombyggnationen.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K15488",
+        "requirement": "Texthöjd för Märkning av VVS och tunnelventilationssystem ska vara minst 10 mm.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K63092",
+        "requirement": "Växelutliggare i stolpe ska vara utformade enligt typritning i tabell 14.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K125681",
+        "requirement": "En V-skylt ska finnas · under en vägskyddssignal · under en orienteringstavla för vägskyddsanläggning.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K56391",
+        "requirement": "APDL ska vara förberedd för 6-trådskoppling.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K64490",
+        "requirement": "Vid ändpunkt ska märkningen placeras där den är tillgänglig och läsbar, till exempel i nedre delen av kontaktledningsstolpe men ovanför kabelskydd, eller under kopplingslåda, växelvärmeskåp och dylikt.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K47482",
+        "requirement": "Kabelförbindning mellan skåp som är monterade sida vid sida ska vara av typ flerledarkabel.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K30734",
+        "requirement": "Rälsförhöjningsskylt ska utföras enligt standardritning 805898.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K46667",
+        "requirement": "Sits och lock till WC-stol ska vara av plast.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K43393",
+        "requirement": "Konstruktionsredovisningen ska minst omfatta: · redogörelse för konstruktionsarbetets förutsättningar och metoder (RKFM) enligt avsnitt 5.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K29408",
+        "requirement": "Överklättringsskydd av typen hajtand ska finnas på grind om anslutande stängsel saknar taggtråd.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K135002",
+        "requirement": "Om tvärbalk under brobaneplatta inte är hopgjuten med brobaneplatta ska fritt avstånd mellan tvärbalk och brobaneplatta vara ? 300 mm.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K63399",
+        "requirement": "Varningsskylten ska placeras i 45º korsningsvinkel mot vägen.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K64336",
+        "requirement": "Spänningsförande friledningar för tågdrift (matarledning, hjälpkraftledning och återledning) får inte permanent förläggas över plattformar där människor vistas.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K47635",
+        "requirement": "Indikeringslampa respektive tryckknapp ska vara märkta med en skylt ovanför respektive lampa/tryckknapp.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K46405",
+        "requirement": "Gånggrind i områdesskydd ska vara utrustad med godkänd låsenhet, i enlighet med SSF200.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K81775",
+        "requirement": "Stängsel ska uppfylla kraven enligt SSF 1087, Klass C, Risknivå 2.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K53671",
+        "requirement": "För isolerad sektionsövergång över tre övergångsspann ska skyltar vara placerade enligt figur 4.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K52959",
+        "requirement": "Kabeln ska kunna identifieras genom dess beteckning.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K38784",
+        "requirement": "Apparatskåp vid trafikkontrollplats ska vara enligt {TRVINFRA-00250 Apparatskåp vägoperativ miljö}.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K53673",
+        "requirement": "I växelkryss med isolerade ryttare ska skylt vara placerad enligt figur 5 så att minsta isolationsavstånd inte underskrids.",
+        "classification": {
+            "target": "Product",
+            "nature": "Mixed",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K29453",
+        "requirement": "Överklättringsskydd av typen hajtand ska finnas på grind om anslutande stängsel saknar taggtråd.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K46663",
+        "requirement": "WC-stol ska vara av porslin.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K161329",
+        "requirement": "Detektorer för växeltungans läge ska vara utförda enligt utläggningsritning för respektive spårväxlar.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K34308",
+        "requirement": "Plattformsskyltar på plattformar ska  om det är tekniskt möjligt  placeras på en höjd av 2 700 mm mätt från skyltens underkant.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K31364",
+        "requirement": "Tilläggsskylt låssymbol ska ha dimension 200x200 mm.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K9670",
+        "requirement": "Trafikinformationstavlor av typ A ska vara monterade på en fri höjd av 5,5 m (tolerans - 0,1 till +0,2m) inklusive bärande konstruktioner.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K58677",
+        "requirement": "Styrkabel mellan master- och slavskåp ska vara skärmad och partvinnad.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K160248",
+        "requirement": "Uppehållstavla ska visa antingen bokstaven U, eller siffror som anger tåglängden i meter.",
+        "classification": {
+            "target": "Product",
+            "nature": "Mixed",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K134489",
+        "requirement": "Träpåle ska förläggas på en nivå ? 200 mm under LLW50 eller lägsta grundvattenyta.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K134997",
+        "requirement": "Lådbalks invändiga utrymme ska vara dränerat med dräneringshål med diameter ? 50 mm genom underfläns.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K34739",
+        "requirement": "Hårdlödning ska användas vid igensättning av hål i växeltungor.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K37397",
+        "requirement": "Vid dubbelsidig användning ska den sida märkas som har minst sidoslitage.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K118449",
+        "requirement": "En person som uppfyller alla krav enligt kapitel Förutsättningar för ibruktagandebesiktningsman banöverbyggnad ska vara behörig endast om hen genomgår en kurs med godkänt resultat.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K47105",
+        "requirement": "Skyddsutjämningsledare ska följa kanalisation och vara ansluten till varje del av kanalisation.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K210132",
+        "requirement": "Märkbrickor i Trafikverkets kopparkabelanläggningar ska placeras på eller i direkt anslutning till samtliga utomhusplacerade Telecom-boxar.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K34244",
+        "requirement": "Väggmonterade statiska skyltar i stationshus ska  om det är tekniskt möjligt  placeras på en höjd av 1 600 mm mätt från skyltens underkant.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K46258",
+        "requirement": "Dräneringsrör ska ha slät insida.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K62626",
+        "requirement": "Kontaktledningslutningen mellan två upphängningspunkter får inte överstiga 2 .",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K30931",
+        "requirement": "Mätpunkter på varje 20 meters-intervall ska väljas utifrån kontroll enligt avsnitt 9.",
+        "classification": {
+            "target": "Process",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K6873",
+        "requirement": "Huvudelkopplare i apparatskåp ska vara låsbar med säker avskiljning av samtliga grupper.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K1891",
+        "requirement": "Trafikinformationstavlor av typ B ska vara monterade på stolpar och bärverk av fackverkstyp.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K195234",
+        "requirement": "Körfältsvägvisare i portal ska vara monterade med horisontell underkant.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K194950",
+        "requirement": "Vertikal snölast ska appliceras på gångbryggor, serviceplan etc.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K135723",
+        "requirement": "Långsam växel ska dimensioneras för statisk last.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K3449",
+        "requirement": "Beställarens granskningstider för dokument i dokumentleveranser ska vara 10 arbetsdagar.",
+        "classification": {
+            "target": "Process",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K129238",
+        "requirement": "Redogörelse för konstruktionsarbetets förutsättningar och metoder, ritning och beskrivning ska upprättas på svenska.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K62191",
+        "requirement": "Tillverkaren eller dess representant ska lämna en EG-försäkran om överensstämmelse med skyddskrav.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K126161",
+        "requirement": "Böjningsradien för kablar tillhörande kabelfamilj JZ-500 HMH får inte understiga 6 x kabeldiametern.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K34333",
+        "requirement": "Hänvisningsskyltar på plattformar som monteras hängande under plattformstaket ska placeras på en höjd av 2 700 mm mätt från skyltens underkant.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K134597",
+        "requirement": "Stålöverbyggnad med brobaneplatta av betong ska utformas med samverkan mellan huvudbalkar och brobaneplatta.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K29841",
+        "requirement": "Stängsel får inte monteras så att stängsels spännkraft verkar på märla, se figur K7.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K29166",
+        "requirement": "Stängsel får inte placeras inom arbetsbredd hos angränsande räcke.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K63424",
+        "requirement": "Skyddsportal i järnvägs tvärsektion ska sättas upp 8 - 12 m från närmaste räl.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K195587",
+        "requirement": "Stag och strävor ska ha samma beständighet som angetts för stolparna.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K118413",
+        "requirement": "Ibruktagandebesiktningsman ska dokumentera besiktning enligt TMALL 0377 Ibruktagandebesiktning bananläggning bilaga F, och även signera dokumentet.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K135893",
+        "requirement": "Elstängsel ska följa kraven i SSF 1087 för respektive områdesskyddsklass.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K44199",
+        "requirement": "Stångarmering och ingjutningsgods av konstruktionsstål ska alltid täckas med ett täckande betongskikt.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K2608",
+        "requirement": "För sammansatt utrustning som apparatskåp, ventilationsaggregat och liknande ska märkskyltar vara monterade på eller i front.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K47630",
+        "requirement": "Apparatskåp ska vara märkt enligt TRVINFRA-00070 Elkraftsanläggning Stationer.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K82085",
+        "requirement": "Kortläsare ska vara utrustat med vandalskydd.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K56251",
+        "requirement": "Snörasskydd ska finnas ovanför ytterdörrar och andra passager.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K56027",
+        "requirement": "Hyllan med tangentbord och pekdon ska kunna fällas in i kontrollskåpet.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K44062",
+        "requirement": "Laster från ovanförliggande eller intilliggande byggnadsverk ska delas upp i permanenta laster och variabla laster.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K56193",
+        "requirement": "Konstruktionsvirke ska minst vara utfört i kvalitet C14 där ej annat anges.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K2896",
+        "requirement": "Synbarhet hos vägbaneljus för avstängningsanordningar ska vara tydlig på 100 - 10 meters avstånd förutsatt att konstruktioner utanför vägbanan inte begränsar sikten.",
+        "classification": {
+            "target": "Product",
+            "nature": "Mixed",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K49350",
+        "requirement": "Tryckknappar för lokal manövrering ska vara märkt med skylt med texten FÖR PROVNING.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K6389",
+        "requirement": "Markeringsskärmar på vägbom för tvåsidiga avstängningsanordningar ska vara med individuell markeringsskärm per bom.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K29436",
+        "requirement": "Skjutgrind ska monteras fribärande i stativ enligt tillverkarens anvisning.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K53186",
+        "requirement": "Varningsskyltar ska sitta vid plankorsningar.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K30518",
+        "requirement": "Rälsförhöjning ska anordnas så att ytterräl ligger högre än innerräl.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K30144",
+        "requirement": "Vid nybyggnation ska normalsektion för fria rummet enligt figur K5.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K195029",
+        "requirement": "Betongen ska uppfylla kraven i SS-EN 206 och SS 137003, Betong  användning av EN 206 i Sverige.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K6210",
+        "requirement": "Kameraenheter av fast typ med fjärrmanövrerad zoom ska bildutsnittet vara med möjlighet att styras via ONVIF, Profil S.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K195209",
+        "requirement": "En skylt ska vara tillverkad av material som uppfyller krav enligt avsnitt 5.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K10168",
+        "requirement": "Trafikinformationstavla av typ A1W, A2W, A3W ska vara med gångbrygga till entrédörr.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K209322",
+        "requirement": "I samband med nybyggnation av Trafikverkets optokabelanläggningar i tunnlar ska fibrerna i lokalkablar avsedda för tele- och datakommunikation anslutas med UPC- kontakter till blå mellanstycken i ODF-enheter.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K73689",
+        "requirement": "Bullerskyddsskärm ska kunna motstå påverkan från vegetationsröjning av intilliggande yta utan att skadas.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K29725",
+        "requirement": "Spärrstängsel ska dras fram till säkerhetszon.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K6324",
+        "requirement": "I anslutningar till portaler eller master försedda med åskskydd och överspänningsskydd ska skylt med text \"ANLÄGGNINGEN ÄR FÖRSEDD MED ÅSKSKYDD OCH ÖVERSPÄNNINGSSKYDD\" vara redovisad.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K29162",
+        "requirement": "Stängsel ska utformas och placeras så att det inte skymmer fri sikt vid plankorsning.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K55617",
+        "requirement": "Märkning ska vara utförd med skyltämne enligt ritning 3-800132 - Skyltämne för stolpbeteckning.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K125516",
+        "requirement": "Orienteringstavla, se figur nedan, ska med tilläggsskylt med driftplatssignatur, finnas före en infartssignal på försignalavstånd till infartssignalen.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K72165",
+        "requirement": "Tillåten vindavdrift ska väljas utifrån vilken eller vilka bredder av strömavtagare som anläggningen ska dimensioneras för.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K8739",
+        "requirement": "Panelkort ska vara enligt {SS 455 12 01 T1 Dokumentation av teletekniska anläggningar}.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K31361",
+        "requirement": "Utrymningsskylt ISO 7010-E001 och ISO 7010-E002 ska ha dimension 200x200 mm.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K37392",
+        "requirement": "Räler som ska sändas till Rälsverkstaden i Sannahed för revidering med rälsverkstadens utrustning får inte överstiga 60 m.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K9539",
+        "requirement": "Beställarens provningsansvarige ska utfärda intyg om genomfört provningssteg efter avslutad provning som Beställaren ansvarar för.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K161368",
+        "requirement": "Kontrollåsnyckeln ska utgöra en kvittens på att det tillhörande objektet intar rätt läge och att förändring av läget är förhindrad så länge kontrollåsnyckeln inte används.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K126087",
+        "requirement": "I de fall det finns en Z-förbindning på platsen för anslutningen av upptag och eventuell matning ska anslutningen av de senare vara flyttade en sliper bort från isolerskarven.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K72733",
+        "requirement": "Omriktare ska ha beteckningen OMR och ett löpnummer och utförandet enligt Figur 12.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K35200",
+        "requirement": "Med växeltungor i öppet läge, ska stödrälen slipas över hela den definierade målprofilen.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K34379",
+        "requirement": "Lyftbord ,i kontrollgrop vid trafikkontrollplats, ska vara levererad med tre (3) st.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K7313",
+        "requirement": "Vid kopplingsställe ska jordtagsledare vara försedd med märkskylt.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K13262",
+        "requirement": "Apparatskåp i fuktig miljö ska vara konstruerade så att kondens i apparatskåp motverkas.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K30169",
+        "requirement": "Inom ej streckade delar av normalsektion för fria rummet får inte förekomma annat än lastkaj, spärrstaket, rangerbroms och portöppning, se särskilda regler i kapitel 6.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Local"
+        }
+    },
+    {
+        "id": "K80853",
+        "requirement": "Omslutningsytan ska ge ett skydd mot inbrott och försvåra bortförande av stöldgods för verksamheter med större mängd stöldbegärlig egendom/tillgångar eller annat skyddsvärde än skyddsklass 1.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K194990",
+        "requirement": "Ett skyddsräcke på en fast inspektionsanläggning ska dimensioneras för en last enligt SS- EN 1991-2, Eurokod 1: Laster på bärverk  Del 2: Trafiklast på broar, avsnitt 4.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K210451",
+        "requirement": "I samband med utsättning av kabel i Trafikverkets kabelanläggningar ska blankett Kabelutsättning användas.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "Internal"
+        }
+    },
+    {
+        "id": "K135808",
+        "requirement": "Slitsmur ska utformas och dimensioneras enligt SS-EN 1538 varvid följande ska gälla: · Slitsmur utsatt för böjande moment ska vara armerad.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K54361",
+        "requirement": "Det ska vara av välkänt fabrikat med alla texter på svenska.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K209325",
+        "requirement": "I samband med nybyggnation av Trafikverkets optokabelanläggningar i tunnlar ska fibrerna i lokalkablar avsedda för optisk radiokommunikation anslutas med APC- kontakter till gröna mellanstycken i ODF-enheter.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K212802",
+        "requirement": "Vågsedelutskrift vid våganläggning ska minst vara format A5.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K134526",
+        "requirement": "Bottenplatta på pålar får inte vara undervattensgjuten.",
+        "classification": {
+            "target": "Process",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K160251",
+        "requirement": "Vid ett spår ska uppehållstavla vara placerad till vänster, alternativt till höger.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K48834",
+        "requirement": "Instruktioner hur man manövrerar den externa Bypassen ska levereras inplastad för uppsättning på väggen.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K81779",
+        "requirement": "Säkerhetsskyltning ska vara applicerad runt hela anläggningens områdesskydd med en intervall av var 12:e meter.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K34322",
+        "requirement": "På plattformar längre än 135 meter som saknar plattformsskyltar samt på plattformar med plattformsskyltar utan spårnummer ska det finnas spårnummerskyltar med ett inbördes avstånd på 80 ± 10 meter.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K50769",
+        "requirement": "Y-lina får inte vara snedställd.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (artificial)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K43408",
+        "requirement": "Redogörelse ska innehålla redovisning av konstruktionsarbetet avseende förutsättningar, metoder och genomförande.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K159088",
+        "requirement": "Val av klotterskydd ska anpassas efter underlagets material.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Ambiguous (natural)",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K5109",
+        "requirement": "Leverantörens provningsansvarige ska utfärda intyg om genomfört provningssteg efter avslutad provning som Leverantören ansvarar för.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K124545",
+        "requirement": "Ett permanent lokalfrigivningsområde ska vara avgränsat av en växel eller en spårspärr som utrullningsskydd mot spår där rörelsevägar kan låsas och mot linjen.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K135690",
+        "requirement": "Räcke ska i brottgränstillstånd dimensioneras för linjelast mot toppföljare ? 1,0 kN/m.",
+        "classification": {
+            "target": "Product",
+            "nature": "Quantitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K135118",
+        "requirement": "Dräneringskanal ska anordnas på tätskikts yta.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "No reference"
+        }
+    },
+    {
+        "id": "K83493",
+        "requirement": "Skyddsklass 2 enligt SSF 200 gäller för hela anläggningens omslutningsyta.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K109737",
+        "requirement": "Egenskaper för samtliga inköpta obundna överbyggnadsmaterial med D ? 90 mm ska vara deklarerade enligt SS-EN 13242 och SS-EN 13285.",
+        "classification": {
+            "target": "Documentation",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    },
+    {
+        "id": "K82800",
+        "requirement": "Panelstängsel ska uppfylla kraven enligt SSF 1087, Klass C, Risknivå 2.",
+        "classification": {
+            "target": "Product",
+            "nature": "Qualitative",
+            "interpretability": "Non-ambiguous",
+            "reference": "External"
+        }
+    }
+]
