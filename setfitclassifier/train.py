@@ -12,7 +12,7 @@ import torch
 #
 # 1. Identify with nvidia-smi which GPUs are available
 # 2. Limit, if needed, to run only on a specific GPU, e.g. with index 0,
-#    by invoking CUDA_VISIBLE_DEVICES=0 python train_agreement.py
+#    by invoking CUDA_VISIBLE_DEVICES=0 python train.py
 # -------------------------------------
 
 current_time = datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -24,39 +24,39 @@ dataset = load_dataset("csv", data_files="../data/cv_250_samples/Consolidated an
 best_parameters = {}
 
 best_parameters["target"] = {
-    "body_learning_rate": 1.4287462741998545e-05,
+    "body_learning_rate": 1.46948781073726e-05,
     "num_epochs": 2,
     "batch_size": 32,
-    "seed": 23,
-    "max_iter": 160,
+    "seed": 29,
+    "max_iter": 154,
     "solver": "lbfgs"
 }
 
 best_parameters["nature"] = {
-    "body_learning_rate": 1.9511727001353293e-05,
+    "body_learning_rate": 2.9110595020703845e-05,
     "num_epochs": 2,
     "batch_size": 16,
-    "seed": 22,
-    "max_iter": 194,
+    "seed": 18,
+    "max_iter": 100,
     "solver": "lbfgs"
 }
 
 best_parameters["interpretability"] = {
-    "body_learning_rate": 0.00017650586856170257,
+    "body_learning_rate": 4.653173233065894e-05,
     "num_epochs": 2,
     "batch_size": 16,
-    "seed": 22,
-    "max_iter": 166,
+    "seed": 28,
+    "max_iter": 225,
     "solver": "liblinear"
 }
 
 best_parameters["reference"] = {
-    "body_learning_rate": 6.27673051627565e-05,
-    "num_epochs": 1,
+    "body_learning_rate": 7.75502030284365e-05,
+    "num_epochs": 2,
     "batch_size": 16,
-    "seed": 30,
-    "max_iter": 121,
-    "solver": "liblinear"
+    "seed": 14,
+    "max_iter": 184,
+    "solver": "lbfgs"
 }
 
 

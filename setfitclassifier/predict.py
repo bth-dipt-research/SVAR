@@ -1,7 +1,7 @@
 """
 The predictor
 
-Parameter 1: a path to the models for different clasification dimensions.
+Parameter 1: a path to the models for different classification dimensions.
 Parameter 2: a file containing a list of requirements IDs for wich we do
              not want to have predictions, g.g. because they have been
              used for training.
@@ -16,10 +16,6 @@ import csv
 import re
 from pathlib import Path
 import pandas as pd
-
-
-def clean(requirements):
-    return [re.sub(r'^K\d+ ', '', s) for s in requirements]
 
 
 def read_csv(filename, has_header=True):
