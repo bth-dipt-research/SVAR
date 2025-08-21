@@ -4,12 +4,10 @@ from keys import OPENAI_KEY
 
 import pandas as pd
 import json
+import sys
+import argparse
 
-from utils import data_dir
 from utils import Classification
-
-ground_truth = pd.read_csv(data_dir / 'Consolidated and validated results_20250409.csv')
-client = OpenAI(api_key=OPENAI_KEY)
 
 instructions = """
 You are an expert in requirements engineering and construction (roads, railways, infrastructure). Your task is to classify infrastructure requirements written in Swedish to identify unverifiable requirements. The classification follows a specific scheme, considering four dimensions with the labels in square brackets: target [Product, Process, Documentation], nature [Quantitative, Qualitative, Mixed], interpretability [Non-ambiguous, Ambiguous (natural), Ambiguous (artificial)], and reference [Local, Internal, External, No reference]. You classify a requirement based on the instructions and definitions below, and output solely the label for each dimension.
@@ -53,25 +51,25 @@ An internal reference points to a document within the same collection of documen
 An external reference points to a document that is not under the control of the organization that owns the requirement. For example, a requirement can point to a standard issued by a standardization body or a law issued by a government.
 """
 
-def classify(model, **kwargs):
+def classify(**kwargs):
     results = []
     for index, row in ground_truth.iterrows():
         id = row['ID']
-        requirement = row['text']
+        requirement = row['requirement']
 
         messages = [
             {'role': 'system', 'content': instructions},
             {'role': 'user', 'content': requirement}
         ]
 
-        response = client.responses.parse(model=model,
+        response = client.responses.parse(model=modelname,
                                           input=messages,
                                           text_format=Classification,
                                           **kwargs
                                           )
 
         classification_data = response.output_parsed
-        print(f'{model} ({index + 1}/{samples}):{requirement} --> {classification_data}')
+        print(f'{modelname} ({index + 1}/{samples}):{requirement} --> {classification_data}')
 
         results.append({
             'id': id,
@@ -79,18 +77,42 @@ def classify(model, **kwargs):
             'classification': classification_data.model_dump()
         })
 
-        with open(data_dir / f'predictions_{model}.json', 'w', encoding='utf-8') as f:
-            json.dump(results, f, ensure_ascii=False, indent=4)
+    with open(outputdir / f'predictions_{modelname}.json', 'w', encoding='utf-8') as f:
+        json.dump(results, f, ensure_ascii=False, indent=4)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('inputfile', type=str, help='Test set file')
+    parser.add_argument('modelname', type=str, help='Name of the GPT model')
+    parser.add_argument('outputdir', type=str, help='Directory to write the predictions')
+
+    args = parser.parse_args()
+    modelname = args.modelname
+    inputfile = args.inputfile
+    outputdir = Path(args.outputdir)
+
+    models = ['gpt-4o-mini', 'gpt-4o', 'gpt-4.1']
+    reasoning_models = ['o4-mini', 'o3', 'gpt-5-nano', 'gpt-5']
+
+    if modelname in models:
+        is_reasoning_model = False
+    elif modelname in reasoning_models:
+        is_reasoning_model = True
+    else:
+        print('Unknown model specified. Exiting...')
+        sys.exit(1)
+
+    ground_truth = pd.read_csv(inputfile, encoding='latin-1')
+    samples = len(ground_truth)
+
+    client = OpenAI(api_key=OPENAI_KEY)
+
+    if is_reasoning_model:
+        classify(reasoning={'effort': 'medium'})
+    else:
+        classify(temperature=0)
 
 
-models = ['gpt-4o-mini', 'gpt-4o', 'gpt-4.1']
-reasoning_models = ['o4-mini', 'o3']
-samples = len(ground_truth)
-            
-for model in models:
-    classify(model, temperature=0)
 
-for model in reasoning_models:
-    classify(model, reasoning={'effort': 'medium'})
 
 

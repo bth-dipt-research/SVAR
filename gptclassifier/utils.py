@@ -34,5 +34,3 @@ class Prediction(BaseModel):
     requirement: str
     classification: Classification
 
-
-data_dir = Path('../data/cv_250_samples/')
