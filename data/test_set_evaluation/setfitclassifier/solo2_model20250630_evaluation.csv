@@ -1,0 +1,13 @@
+dimension,average type,precision,recall,f1
+target,micro,0.916,0.916,0.916
+target,macro,0.806,0.693,0.736
+target,weighted,0.910,0.916,0.910
+nature,micro,0.920,0.920,0.920
+nature,macro,0.664,0.685,0.673
+nature,weighted,0.918,0.920,0.918
+interpretability,micro,0.780,0.780,0.780
+interpretability,macro,0.489,0.414,0.431
+interpretability,weighted,0.750,0.780,0.761
+reference,micro,0.952,0.952,0.952
+reference,macro,0.862,0.886,0.869
+reference,weighted,0.958,0.952,0.954

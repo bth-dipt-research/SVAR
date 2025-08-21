@@ -1,0 +1,251 @@
+ID,requirement,target,nature,interpretability,reference,comments
+K30697,Lutningstavla ska sättas upp vid vinkelspetsar till markerad lutning.,Product,Qualitative,Ambiguous (artificial),No reference,"Maybe the context contains a figure, but the requirement itself does not point to it, hence ambiguous."
+K29159,Stängsel ska utgöras av stålnätspaneler.,Product,Qualitative,Non-ambiguous,No reference,
+K46675,Vattenslang ska vara försedd med snabbkopplingar.,Product,Qualitative,Non-ambiguous,No reference,
+K195698,Persongrind ska monteras i karm (får utgöra del av fordonsgrind).,Product,Qualitative,Non-ambiguous,No reference,
+K45479,Kopplingsplint ska vara av typ Phoenix URTK-BEN eller motsvarande.,Product,Qualitative,Ambiguous (natural),No reference,Natural ambiguous since requirement mentions equivalent.
+K73313,Manöverkrets med APDL för kopplingsapparat med MMD ska vara utförd enligt Figur 18.,Product,Qualitative,Non-ambiguous,Local,
+K53973,Byggnadens dörr ska vara försedd med klotterskydd.,Product,Qualitative,Non-ambiguous,No reference,
+K35071,Pinnlödning och hantering av utrustning ska göras enligt instruktioner eller rekommendationer från leverantören eller tillverkaren.,Process,Qualitative,Non-ambiguous,No reference,
+K54004,Kablar och ledare ska införas genom stombjälklag.,Product,Qualitative,Non-ambiguous,No reference,
+K53166,Nedkopplingstavla ska finnas vid skyddssektioner som inte är skyltade med urkopplingstavla eller strömbegränsningstavla.,Product,Qualitative,Non-ambiguous,No reference,
+K54056,Skärmtak och snörasskydd ska monteras ovanför entré.,Product,Qualitative,Non-ambiguous,No reference,
+K36125,När rälvandringshinder ersätts med Heyback ska montering och placering utföras som vid låsning med rälvandringshinder enligt K36125 punkt 4–8 i avsnitt 8.,Product,Qualitative,Non-ambiguous,Local,
+K9210,Kameraenheter av fast typ ska vara med fast position endast avsedd att förändras med verktyg.,Product,Qualitative,Ambiguous (artificial),No reference,"The ""changing"" and ""tools"" parts are ambiguous. Changing in what sense? Position or also angle/direction? What does count as tool?"
+K151615,Vägbeläggningen får inte påverkas vid impregnering.,Product,Qualitative,Ambiguous (artificial),No reference,"If this requirement is taken literally, then the impregnation would have to be ineffective to be acceptable."
+K125663,"Placering av tavlor och skyltar med avseende på fritt utrymme utmed banan ska vara utfört i enlighet med TRVINFRA-00004 ""Infrastrukturprofiler"".",Product,Qualitative,Non-ambiguous,Internal,
+K49075,Kommunikationskabel och optofiber/-kabel ska vara numrerad från 7000 till 7999.,Product,Qualitative,Ambiguous (artificial),No reference,Unclear what the purpose of the numbering is. Is it supposed to be sequential?
+K30314,"Vid kontaktledning över spår ska horisontellt avstånd från spårmitt till plattformstak vara minst 2,0 m, till detta avstånd ska tillägg för rälsförhöjning finnas, se avsnitt 5.",Product,Quantitative,Non-ambiguous,Local,
+K52615,Stagmarkering ska finnas.,Product,Qualitative,Ambiguous (artificial),No reference,The requirement assumes context and background information.
+K160115,En skredvarningsstopplykta och skredvarningsförsignal ska vara pacerade så att siktsträckan blir minst 200 meter.,Product,Quantitative,Ambiguous (artificial),No reference,Not so clear to what the distance refers to. Between the stop light and the warning signal? Or the warnings and the area that is dangerous?
+K125968,"Anslutningsproppens hona och hylspropp ska monteras på kabeln som kommer från kopplingsskåpet med hjälp av hylsor, se figur nedan Figur.",Product,Qualitative,Non-ambiguous,Local,
+K195309,En räckesreflektor ska uppfylla krav för klass DH 1 enligt SS-EN 12899-3 avsnitt 6.,Product,Qualitative,Non-ambiguous,External,
+K57171,Förankring av linjesektion i balkbrygga ska vara utförd enligt ritning 800 485 och ritning 800 486.,Product,Qualitative,Non-ambiguous,Local,Not so clear if the drawings are local or internal.
+K34228,På planskilda plattformsförbindelser ska det finnas markeringsskyltar för de objekt som finns på plattformsförbindelsen.,Product,Qualitative,Non-ambiguous,No reference,
+K36929,Vid uppkörning ska moduler besiktigas enligt medföljande manual för Slipersdriv MET.,Process,Qualitative,Non-ambiguous,External,
+K52618,Stag till trästolpe med S-rälsjordad detalj ska vara försedd med en stagisolator 4 meter över räls överkant.,Product,Quantitative,Non-ambiguous,No reference,
+K9237,Kablar med fast anslutningsdon ska vara med anslutningsmärkning där beteckning på anslutningsdon är redovisade.,Product,Qualitative,Non-ambiguous,No reference,
+K61820,Avspänning för kontaktledningssektioner som i sin helhet befinner sig i en tunnel ska vara utförda för att klara temperaturer på -40°C till 50°C.,Product,Quantitative,Non-ambiguous,No reference,
+K64462,"Kablar som ingår i förbindelsen mellan två matande ställverk (eller ställverk och linjens ändpunkt) ska betecknas enligt följande princip: E:Aa–Bbb N 15kV (37-2) Förutsättning Förklaring E Elkraftkabel Aa – Bbb Driftplatsförkortning för matande ställverk i vardera änden av linjen (eller för linjens ändpunkt vid enkelsidig matning); för bangårdslinje inom en och samma driftplats anges bara en driftplatsförkortning N U eller N-spår i förekommande fall, även M, M1, M2 etcetera samt BG kan förekomma; vid enkelspårig linje anges ingen beteckning 15kV Avser kabel för kontaktledningsspänning (kontaktledningens fas), till exempel utmatningsledning eller förbiledning; för kabel i återledning eller AT-ledning anges i stället Å respektive ATL (37-2) Km-tal för kabelns början i linjeriktningen samt löpnummer.",Product,Qualitative,Non-ambiguous,No reference,
+K73646,Bullerskyddsskärm får inte placeras närmare spårmitt än angivna mått i TRVINFRA- 00004 Ban- och stationsutformning Infrastrukturprofiler.,Product,Qualitative,Non-ambiguous,Internal,Qualitative since the requirement itself does not specify any dimensions.
+K118476,Behörigheten bankontrollant ska upphöra om besiktningssamordnaren på Trafikverket beslutar om återkallande av behörighet.,Process,Qualitative,Non-ambiguous,No reference,
+K91254,"Stängsel ska uppfylla kraven enligt SSF 1087, Klass C, Risknivå 2.",Product,Qualitative,Non-ambiguous,External,
+K15750,"Trafikinformationstavla av typ A1, A2, A3, B1, B2, B3 ska vara med gångbrygga på baksidan.",Product,Qualitative,Non-ambiguous,No reference,
+K12891,Förbindningstabeller ska vara med förteckning av inre/yttre kopplingar i apparatskåp.,Documentation,Qualitative,Non-ambiguous,No reference,"The ""connection tables"" are here the documentation. "
+K217702,"Två ploglyfttavlor, en i vardera riktningen, sätts upp på samma stolpe med de vita reflexfälten vertikala enligt kapitel 8 mitt för, eller högst en meter från, ett punktformigt hinder som inkräktar på fritt utrymme enligt figur K5.",Product,Mixed,Non-ambiguous,Local,
+K48479,Tryckluftsbehållare får inte monteras i utomhusställverk.,Product,Qualitative,Non-ambiguous,No reference,
+K48331,Anslutningsklämmorna ska vara utförda för ledare med upp till 6 mm2 area.,Product,Quantitative,Non-ambiguous,No reference,
+K53032,"Sektionsisolator får inte vara placerad närmare, utliggare med tillsatsrör än 10 meter, utliggare utan tillsatsrör 6 meter.",Product,Quantitative,Non-ambiguous,No reference,
+K6333,Montageritningar VVS ska vara upprättade för utrustning ingående i VVS-system i teknikhus/driftutrymme.,Documentation,Qualitative,Non-ambiguous,No reference,
+K36095,Rälskarvar på höger och vänster räl ska placeras i samma slipersfack.,Product,Qualitative,Non-ambiguous,No reference,
+K63087,Sektionsutliggare sidomonterad i enkel- och dubbelspårstunnel ska vara utformade enligt typritning i tabell 12.,Product,Qualitative,Non-ambiguous,Local,
+K5218,Kameraenheter ska ha bildtäckning enligt Beställarens specifikation.,Product,Qualitative,Ambiguous (artificial),Internal,Interal reference since the customer is TRV. Ambiguous since not clear what image coverage actually is. 
+K210304,Befintligt tryckskydd på kabel i Trafikverkets kopparkabelanläggningar ska bibehållas i samband med reparation och ombyggnation.,Process,Qualitative,Non-ambiguous,No reference,Process because this refers directly to repairs and is not a characteristic of the product itself.
+K55990,"Kopparbaserad datakommunikationskabel ska vara av industrikvalitet, av kategori lägst CAT-6 och ha ett utförande F/FTP eller S/FTP.",Product,Qualitative,Ambiguous (artificial),No reference,"""Industrial quality"" is vague, even though CAT-6 and shielding methods are specific."
+K64430,Skärm till kabel för matarledning ska vara jordad enligt TRVINFRA-00011 Elkraftanläggning Jordning.,Product,Qualitative,Non-ambiguous,Internal,
+K65367,Anslutningspunkter ska visas som en svart punkt i korsningen mellan två ledningar.,Documentation,Qualitative,Non-ambiguous,No reference,My assumoption here is that the requirement refers to how connection points should be drawn in documentation.
+K134687,Klaff med fast tapp ska lagras i sfäriskt ledlager eller sfäriskt rullager.,Product,Qualitative,Non-ambiguous,No reference,"A bit unsure here if this is process or product. I assume here the point is to describe a characteristic of the product, and not how the product is produced."
+K210313,24 timmar efter trycksättning av kommunikationskabel i samband med nyinstallation får övertrycket inte ha sjunkit med mer än 25 mbar i någon punkt på aktuell kabelsträcka.,Product,Quantitative,Non-ambiguous,No reference,
+K125537,K 13-nyckeln ska finnas tillgänglig fastkedjad i ett nyckelskåp som är låst med lås av typen C0-01.,Product,Qualitative,Non-ambiguous,No reference,"A lot of domain specific references here, but no inherent ambiguity."
+K27537,Trafikinformationstavlor ska vara utformade enligt {SFS 2007:90 Vägmärkesförordning}.,Product,Qualitative,Non-ambiguous,External,
+K13204,"Försignaler för öppningsbar bro, vägoperativ miljö, ska vara med svart bakgrundsskärm med vit bård enligt {SFS 2007:90 Vägmärkesförordning}.",Product,Qualitative,Non-ambiguous,External,
+K57170,"Förankring av linjesektion med gemensam eller separat viktavspänning i ledningsbrygga typ B76, B87 eller B13-7 ska vara utförd enligt ritning 803 066.",Product,Qualitative,Non-ambiguous,Local,Not so clear if the drawings are local or internal.
+K54670,Anslutningsbestyckning för kabel eller kablar ska vara placerad i separat låsbart skåp.,Product,Qualitative,Non-ambiguous,No reference,
+K125523,Orienteringstavla med tilläggsskylt ”Stopp vid plankorsning” ska finnas på minst 300 meters avstånd från plankorsningen samt mellan den plats där tåg normalt stannar och plankorsningen.,Product,Quantitative,Ambiguous (artificial),No reference,"Unclear what ""between the place where trains normally stop"" means. ""Normally"" is ambiguous."
+K135489,"Spjälgrind, skyddsnät, stänkskydd och bullerskydd som ryms inom räckets höjd ska dimensioneras för horisontell last av 4 kN/m2 vinkelrätt mot vägens riktning.",Product,Quantitative,Non-ambiguous,No reference,
+K56381,"Brandspridningsklass A2-s1, do ska vara uppfylld för kabelstege i byggnad.",Product,Qualitative,Non-ambiguous,No reference,
+K123822,"I de fall en signaleringssträcka består av två eller flera spårledningar ska uppsamlingsreläet utrustas med en tillslagsfördröjning på minst 0,8 sekunder och som mest 1,5 sekunder.",Product,Quantitative,Non-ambiguous,No reference,
+K83555,"Panelstängsel ska uppfylla kraven enligt SSF 1087, Klass C, Risknivå 2.",Product,Qualitative,Non-ambiguous,External,
+K30255,"Lastkaj vid sidospår ska placeras med ett avstånd från spårmitt på 1,70 m + kurvtillägg enligt avsnitt 5.",Product,Quantitative,Non-ambiguous,Local,
+K49072,Kabelnumrering av ska vara utförd med en nummerserie från 0001 till 9999.,Product,Qualitative,Non-ambiguous,No reference,"The formulation here is clear, as opposed to K49075 which I classified as ambiguous because the sequence aspect was not mentioned."
+K56490,Märkbricka inomhus ska vara fäst med fästband av åldersbeständigt plastmaterial.,Product,Qualitative,Ambiguous (artificial),No reference,Age-resistant is vague. How long shall the tape last?
+K52954,Kabelskarv ska vara utfört av person med utbildning för att utföra kabelskarvar.,Process,Qualitative,Non-ambiguous,No reference,
+K123734,Sicksackfällning ska finnas i ett trafikflöde om följande villkor är uppfyllda · en bom spärrar vägtrafik antingen in mot plankorsningen eller bort från plankorsningen · vägtrafiken passerar ingångsbommen före utgångsbommen · gångbanor förekommer inte.,Product,Qualitative,Non-ambiguous,No reference,
+K125682,"I de fall V-signalen är monterad i kontaktledningsstolpe, ska V-skylten vara monterad enligt montage av märkskylt i kontaktledningsstolpe.",Product,Qualitative,Non-ambiguous,No reference,
+K47279,"Kopplingsplint ska vara utförd och provad enligt SS-EN 60947-7-1, utg 3:2009 Kopplingsapparater för högst 1000 V - Del 7-1: Övrig hithörande materiel - Kopplingsplintar för kopparledare .",Product,Qualitative,Non-ambiguous,External,"Requirement refers to both designing and testing, suggesting this is both a product and process requirement. "
+K212733,"För mittplacerade stolpar ska märkskylten placeras på stolpens ”framsida, sett i någon av färdriktningarna, enhetligt för hela sträckan.",Product,Qualitative,Ambiguous (artificial),No reference,"Not so clear how the ""front"" is defined. Depending on context, if the travel direction is bi-directional, this does not make sense."
+K61162,Vid normalsektion för fria rummet får kontakttrådshöjden inte understiga 5250 mm enligt TRVINFRA-00004 Ban- och stationsutformning Infrastrukturprofiler.,Product,Quantitative,Non-ambiguous,Internal,
+K30683,I kurva utan rälsförhöjning ska en skylt med rälsförhöjning 0 mm utplaceras i tangeringspunkter.,Product,Quantitative,Non-ambiguous,No reference,Someone with domain exepertise probably understands this.
+K151468,Ledning får inte fästas direkt mot bro.,Product,Qualitative,Non-ambiguous,No reference,
+K30743,Lutningstavla ska utföras enligt standardritning 3-516183 K30743 Lutningstavla ska utföras enligt utförande ett eller två i figur K10.,Product,Qualitative,Non-ambiguous,Local,
+K72732,Omformare ska ha beteckningen OMF och ett löpnummer och identitetsnummer enligt Figur 12.,Product,Qualitative,Non-ambiguous,No reference,
+K209927,Lokalkabel får inte ersätta mellanortskabel.,Product,Qualitative,Non-ambiguous,No reference,"Context is missing here, but the requirement formulation itself is not ambiguous."
+K218237,Bomkjolen till en halvbom ska vara gul på båda sidor.,Product,Qualitative,Ambiguous (artificial),No reference,"The emphasis here is not on the particular color but that both sides of the skirt are yellow. Hence, I'd rather say not ambiguous, even though the color is not unambiguously specified."
+K4345,"Dokumentleverans 5 för öppningsbar bro, vägoperativ miljö, (slutdokumentation) ska vara delgivna till beställaren 4 arbetsveckor före slutbesiktning.",Process,Quantitative,Non-ambiguous,No reference,"Since this is about the delivery, not the content of the documentation, classified as process."
+K80917,Kortläsare ska vara utrustat med vandalskydd.,Product,Qualitative,Non-ambiguous,No reference,
+K34300,"På plattformar längre än 135 meter på järnvägsstationer med stationsklass 1, 2, 3 och 4 ska det finnas plattformsskyltar med ett inbördes avstånd på 80 ± 10 meter.",Product,Quantitative,Non-ambiguous,No reference,
+K53176,Urkopplingstavla ska följas av en inkopplingstavla efter skyddssektionen.,Product,Qualitative,Non-ambiguous,No reference,
+K36860,Dokumentation av byggnation ska tillhandahållas enligt avsnitt 8.,Documentation,Qualitative,Non-ambiguous,Local,
+K212688,"Underkant lucka på stolpar placerade på broar eller motsvarande ska vara högst 1,50 m över brobana.",Product,Quantitative,Ambiguous (artificial),No reference,"""or equivalent"", referring to when the requirement applies, is vague and open for interpretation. This is not solution open, i.e. natural ambiguity."
+K37119,Tunga SJ50 med tapphål djupare än 16 mm får inte återanvändas.,Process,Mixed,Non-ambiguous,No reference,"Requirements seesm to refer to the construction process. Unclear what SJ50s are, context missing. However, no inherent ambiguity."
+K64931,"Kontaktledningslutningen mellan två upphängningspunkter får inte överstiga 1,5 ‰.",Product,Quantitative,Non-ambiguous,No reference,
+K54002,Byggnadens bärande bjälklag ska dimensioneras för de verkliga lasterna om karakteristiska lastvärdena från utrustning och installationer överstiger angivna dimensionerande lastförutsättningar enligt avsnitt Dimensionerande lastförutsättningar.,Product,Qualitative,Non-ambiguous,Local,
+K210272,Resultatet av slutmätning på kommunikationskabel i Trafikverkets kopparkabelanläggningar ska dokumenteras i IDA.,Documentation,Qualitative,Non-ambiguous,No reference,
+K129323,Märkning på ritning ska vara placerad omedelbart över namnruta.,Documentation,Qualitative,Non-ambiguous,No reference,
+K4927,Egenkontroller/egenprovningar ska vara genomförda på ett sådant sätt att utrustningstillverkares dokumenterade anvisningar har följts.,Process,Qualitative,Non-ambiguous,No reference,
+K73334,Ledig anslutningsport ska vara blockerad med låsbart portlås.,Product,Qualitative,Non-ambiguous,No reference,
+K57797,Samlingsskenskydden ska lösa ut samtliga till felbehäftad sektion anslutna brytare.,Product,Qualitative,Non-ambiguous,No reference,
+K47596,Varselmärkning ska utföras enligt ELSÄK-FS 2008:2 med tilläggsföreskrifter enligt ELSÄK-FS-2010:2.,Product,Qualitative,Non-ambiguous,External,
+K58678,Styrkabel mellan master- och styrskåp ska minst ha 7 par/14 ledare.,Product,Quantitative,Non-ambiguous,No reference,
+K5523,Rapport om kablar i noder ska vara möjlig att delas per teknikområde.,Documentation,Qualitative,Non-ambiguous,No reference,
+K99843,Trafikverkets kontraktspart ska kalla till konstruktionsstartmöte minst en vecka innan föreslagen mötestid.,Process,Quantitative,Non-ambiguous,No reference,
+K46350,Maskvidd ska vara 50x50 mm.,Product,Quantitative,Non-ambiguous,No reference,
+K125521,"Orienteringstavla, se figur nedan, med tilläggsskylt ”Stopp vid plankorsning”, ska sättas ut vid plankorsningar med kort signaleringsträcka.",Product,Qualitative,Ambiguous (artificial),No reference,"""Short signaling distances"" is vague."
+K63405,Varningsskylten ska placeras i 45º korsningsvinkel mot vägen.,Product,Quantitative,Non-ambiguous,No reference,
+K34377,"Lyftbord ,i kontrollgrop vid trafikkontrollplats, ska vara levererat med hydraulaggregat och fästen.",Product,Qualitative,Non-ambiguous,No reference,
+K217436,Kameraenheten ska med standardfäste kunna monteras i tak för 360° graders överblick.,Product,Mixed,Ambiguous (artificial),No reference,Standard bracket is vague. Which standard?
+K8211,Kameraenheter ska vara monterade på höjd över mark/väg enligt Beställarens specifikationer.,Product,Qualitative,Ambiguous (artificial),No reference,"There is no reference to the customer's specifications, so this is vague. The information should be here or clearly indentified were to find it."
+K47480,Datakommunikationskabel utanför kontrollskåp ska vara optokabel.,Product,Qualitative,Non-ambiguous,No reference,
+K29218,Stängsel som löper längs med spåret ska placeras bakom kontaktledningsstolpar sett från spåret.,Product,Qualitative,Non-ambiguous,No reference,
+K53007,Frånskiljares märkning och position ska framgå av kopplingsschema.,Documentation,Qualitative,Non-ambiguous,No reference,
+K9997,Märkskyltar för VMS ska vara graverad plastskylt.,Product,Qualitative,Non-ambiguous,No reference,
+K34225,"På planskilda plattformsförbindelser ska det finnas hänvisningsskyltar mot trappor, rulltrappor och hissar vid samtliga upp- eller nedgångar till plattform.",Product,Qualitative,Non-ambiguous,No reference,
+K127919,Tvärförbindningen ska i sin helhet vara elektriskt ansluten till jordlinor mellan jordningskopplare och S-räl.,Product,Qualitative,Non-ambiguous,No reference,
+K134515,På skyddsjordad konstruktion vid elektrifierad järnväg ska ingjutningsgods ha god elektrisk kontakt med armering.,Product,Qualitative,Ambiguous (artificial),No reference,"Unclear what ""good electrical contact"" means."
+K73667,Avstånd mellan bullerskyddsskärm och kontaktledningsstolpe ska möjliggöra underhållsarbete på och kring stolpe.,Product,Qualitative,Ambiguous (natural),No reference,"Naturally ambiguous as no concrete distance is given, put the purpose of the requirement is clear and can be tested."
+K56409,Kopplingsplint för extern manöverspänning ska vara beröringsskyddad.,Product,Qualitative,Non-ambiguous,No reference,
+K109930,Grusöverbyggnad enligt detta kravdokument är inte avsedd att senare förses med beläggning.,Product,Qualitative,Non-ambiguous,Local,"Very strange formulation. The Swedish one makes sense, the translation is bad."
+K53131,Gruppgränsmarkering ska sitta på de olika kontaktledingsgrupperna vid kontaktledningsstolpar och kontaktledningsbryggor då flera kontaktledningsgrupper förekommer i samma kontaktledningsstolpe/brygga.,Product,Qualitative,Non-ambiguous,No reference,
+K80855,Skyddsklass 3 enligt SSF 200 gäller för hela anläggningens omslutningsyta.,Product,Qualitative,Non-ambiguous,External,
+K209780,"Innan installation av mikrokabel i Trafikverkets optokabelanläggningar påbörjas ska kraven K209775, K209776, K209778, K209779 och K209780 vara uppfyllda i enlighet med avsnitt 7.",Product,Qualitative,Non-ambiguous,Local,
+K135064,Brobaneplatta ska förses med beläggning eller överfyllnad.,Product,Qualitative,Non-ambiguous,No reference,
+K161629,"Berörda dokument ska i förvaltningsskedet bestå av färgmarkerade arbets-, gransknings- och besiktningsdokument.",Documentation,Qualitative,Non-ambiguous,No reference,
+K160071,En dvärgsignal ska vara försedd med en fyrkantig vit märkskylt med signalens beteckning utan trafikplatssignatur men med ett unikt nummer för driftplatsdelen eller ett unikt nummer för driftplatsen.,Product,Qualitative,Non-ambiguous,No reference,
+K29474,Nominell trådtjocklek i kanttråd får inte understiga 4 mm.,Product,Quantitative,Non-ambiguous,No reference,
+K73640,Genomsiktlig bullerskyddsskärm ska förses med icke transparent markering över hela skärmens yta.,Product,Qualitative,Non-ambiguous,No reference,
+K30256,Lastkaj får inte placeras intill huvudspår.,Product,Qualitative,Non-ambiguous,No reference,
+K2373,"Märkskyltar ska vara monterade med skruv, nit eller på annat likvärdigt sätt.",Product,Qualitative,Ambiguous (natural),No reference,Natural ambiguous since requirement mentions equivalent means.
+K35037,Vid påsvetsning av stödräl ska svetsarens svetsarnummer stämplas på rälhuvudets utsida vid främre tungspetsstag.,Process,Qualitative,Non-ambiguous,No reference,
+K160209,"I de fall orienteringstavla för trafikplats finns 1100 meter eller längre före en trafikplats, ska den vara försedd med tilläggsskylt ”avstånd”.",Product,Mixed,Non-ambiguous,No reference,
+K161140,"Anslutning från befintlig linje-, tele- eller signalkabel till balis ska vara utförd med kabel ELALV.",Product,Qualitative,Non-ambiguous,No reference,
+K161129,Åskskydd ska vara anordnade för att uppfylla säkerhetskraven på in- och utgångar till kodare tillhörande genom ett insticksmodulförfarande med WAGO-systemet för ett enkelt utbyte.,Product,Qualitative,Ambiguous (artificial),No reference,Easy replacement is vague.
+K36711,Staggropsvärme ska användas för prioriterad vinterväxel som har staggrop.,Product,Qualitative,Non-ambiguous,No reference,
+K30689,"RV-skylt ska limmas på rälliv på insidan av vänster räl, då man står vänd i riktning in mot vertikalkurva.",Product,Qualitative,Non-ambiguous,No reference,
+K29829,"Nät får inte fastspikas i stolpe mellan stängselslut och stängselbörjan, se avsnitt 7.",Product,Qualitative,Non-ambiguous,Local,
+K43776,Bergbultar ska kunna kontrolleras under byggskedet.,Product,Qualitative,Non-ambiguous,No reference,Product because the requirement is about the ability of the bolts to be checked. It is not process since the requirement does not refer to the checking itself.
+K6048,Märkhylsor för partmärkningar av kablar ska vara anpassade till diameter på märkta parter.,Product,Qualitative,Non-ambiguous,No reference,
+K35039,Vid påsvetsning av växeltunga ska svetsarens svetsarnummer stämplas på tungfotens främre del.,Process,Qualitative,Non-ambiguous,No reference,
+K123398,"En hastighetstavla ""10"" och med tilläggsskylt ""V"" ska vara placerad · vid signaleringssträckans början dock som längst 100 meter före plankorsingen · så att det finns sikt på V-signalen eller tavla vägskyddsanläggning från ett spårfordons framände.",Product,Mixed,Non-ambiguous,No reference,
+K64063,Upphängningspunkten ska vara en A-utliggare.,Product,Qualitative,Non-ambiguous,No reference,
+K57565,Texthöjd för skylt till larm ska vara 12 mm.,Product,Quantitative,Non-ambiguous,No reference,
+K48425,"Dränering ska vara utförd enligt stycke 5 i TDOK 2013:0637 Elkraftanläggningar, Mark och byggnadskrav för omformarstationer med statiska omriktare.",Product,Qualitative,Non-ambiguous,Internal,
+K125790,"I de fall skylten ”Se upp för tåg” används, ska den vara placerad där den syns bäst för den som ska passera spårområdet.",Product,Qualitative,Ambiguous (natural),No reference,"Natural ambiguity, which is needed in this case and ok since the goal of the requirement is clear."
+K60098,Funktionsproven ska utföras minst en gång per år.,Process,Quantitative,Non-ambiguous,No reference,
+K128606,Allmän- och utrymningsbelysningens bibehållna medelbelysningsstyrkan i tvärtunneln som framgår av bilaga 1 ska vara ?m ? 10 lx på gångbanans nivå.,Product,Quantitative,Non-ambiguous,Local,
+K46404,Körgrind ska kunna fixeras i öppet läge.,Product,Qualitative,Non-ambiguous,No reference,
+K53042,En sektionsisolator får inte vara placerad i spår med högre STH än vad sektionsisolatorn är konstruerad för.,Product,Qualitative,Non-ambiguous,No reference,
+K36275,Slipersnedställning får inte avvika från underhållstoleranserna enligt TDOK 2014:0516 Underhållsbesiktning av banöverbyggnad.,Product,Qualitative,Non-ambiguous,Internal,
+K29817,"Sankmarksförankring ska bestå av en 3,5 m stolpe samt två stycken 3 m stolpar, se figur K7.",Product,Quantitative,Non-ambiguous,Local,
+K197583,Fast våganläggning vid trafikkontrollplats ska vara med vågsedelutskrift.,Product,Qualitative,Non-ambiguous,No reference,
+K33005,Genomskinliga väggar ska kontrastmarkeras enligt avsnitt 18.,Product,Qualitative,Non-ambiguous,Local,
+K49239,Kopplingsplint ska vara frånskiljbar med verktyg.,Product,Qualitative,Non-ambiguous,No reference,
+K56615,Säkringslastfrånskiljare ska vara utförd enligt SS-EN 60076-13 Krafttransformatorer - Del 13: Oljeisolerade transformatorer med inre säkringar.,Product,Qualitative,Non-ambiguous,External,
+K109766,"Angivna materialspecifika krav för masugnsslagg, krossad betong och asfaltgranulat ska tillämpas enligt detta avsnitt.",Product,Qualitative,Non-ambiguous,Local,
+K218232,En halvbom ska vara försedd med bomkjol om det behövs för att öka dess synbarhet.,Product,Qualitative,Ambiguous (artificial),No reference,The condition of when a skirt needs to be added is vague.
+K135578,Snedkabelbro ska dimensioneras för brott i godtyckligt placerad enstaka kabel.,Product,Qualitative,Non-ambiguous,No reference,I don't understand this requirement
+K125829,Om bommen levereras med egna hävarmar ska dessa passa på bomdrivets fläns enligt figur nedan Figur.,Product,Qualitative,Non-ambiguous,Local,
+K30293,Plattformskants läge vid byggande av ny plattform ska placeras utifrån projekterad spårlinje i plan.,Product,Qualitative,Non-ambiguous,No reference,
+K194972,"Gång- och cykelbaneräcke samt fallskydd ska dimensioneras för en utbredd last av 0,8 kN/m som angriper vinkelrätt mot horisontala delar men i övrigt med godtycklig riktning.",Product,Quantitative,Non-ambiguous,No reference,
+K135037,På järnvägsbro ges kantbalk bredd ? 400 mm om räcke fästs på kantbalks ovansida.,Product,Quantitative,Non-ambiguous,No reference,
+K34292,Hängande hänvisningsskyltar i fördelningspunkter ska – om det är tekniskt möjligt – placeras på en höjd av 2 400 mm mätt från skyltens underkant.,Product,Quantitative,Non-ambiguous,No reference,
+K125824,Vid en eventuell påkörning av fälld bom ska bommen ge vika och inte ge skador på bomdriv samt minimera skador på omgivningen.,Product,Qualitative,Ambiguous (natural),No reference,"Minimize damage is vague, but in this context and purpose of the requirement, ok."
+K7493,Gruppförteckningar som anger anslutningsobjekt ska vara monterade invid central.,Product,Qualitative,Non-ambiguous,No reference,
+K194971,Om byggherren så anger ska gång- och cykelbaneräcken samt förhöjda räcken dimensioneras för en större last.,Product,Qualitative,Ambiguous (artificial),No reference,"""Larger load"" not specified."
+K6570,Märkskyltar för MCS-portaler ska vara monterade så att de är läsbara i körriktning.,Product,Qualitative,Non-ambiguous,No reference,
+K64491,Om flera av de platser där märkbricka ska placeras enligt punktlistan ovan kan överblickas samtidigt så ska bara märkning utföras på en av platserna.,Product,Qualitative,Ambiguous (natural),Local,
+K73693,Bullerskyddsskärm ska utformas så att dess negativa visuella påverkan på omgivningen beaktas.,Product,Qualitative,Ambiguous (natural),No reference,
+K63089,Sektionsutliggare mittmonterad i dubbelspårstunnel ska vara utformade enligt typritning i tabell 13.,Product,Qualitative,Non-ambiguous,Local,
+K47640,Gemensam skylt för nödfrånkoppling och totalstopp ska vara vit med svart text.,Product,Qualitative,Non-ambiguous,No reference,
+K14365,Luckor till intag för reservkraftaggregat ska vara försedd med skylt med text: ”RESERVKRAFTINTAG”.,Product,Qualitative,Non-ambiguous,No reference,
+K195693,"Fri bredd för persongrind får inte understiga 1,0 m i öppet läge.",Product,Quantitative,Non-ambiguous,No reference,
+K52941,Oljepapperskabel får inte läcka olja.,Product,Qualitative,Non-ambiguous,No reference,
+K47534,Lägesindikering av stationsomkopplare ska vara utförd som dubbelindikering.,Product,Qualitative,Non-ambiguous,No reference,
+K48453,Jordning ska vara utförd med jordlina av koppar.,Product,Qualitative,Non-ambiguous,No reference,
+K64065,Upphängningspunkten ska vara en B-utliggare.,Product,Qualitative,Non-ambiguous,No reference,
+K195212,Reflekterande och icke reflekterande folie ska uppfylla i Tabell 9-2 angivna krav.,Product,Qualitative,Non-ambiguous,Local,
+K56408,Kopplingsplint för extern manöverspänning ska vara separerad från övriga kopplingsplintar för att undvika sammanblandning med kopplingsplint för annan spänning.,Product,Qualitative,Non-ambiguous,No reference,
+K210319,Tryckgivare i Trafikverkets kopparkabelanläggningar får inte installeras under jord.,Product,Qualitative,Non-ambiguous,No reference,
+K49284,Säkringslastfrånskiljare ska vara försedd med utlösningsmagnet för fjärrutlösning.,Product,Qualitative,Non-ambiguous,No reference,
+K32941,"Varningsyta ska vara 0,60–0,90 meter bred, enligt figur K4.",Product,Quantitative,Non-ambiguous,Local,
+K125496,Märkskylten till växelsignalen ska ha följande mått 350 x 350 millimeter.,Product,Quantitative,Non-ambiguous,No reference,
+K34263,På platser med markeringsskyltar för hiss och/eller WC ska det finnas taktila markeringsskyltar som komplement.,Product,Qualitative,Non-ambiguous,No reference,
+K46256,Dräneringsrör ska luta minst 5 ‰ mot samlingsbrunn.,Product,Quantitative,Non-ambiguous,No reference,
+K29699,"Stängsel ska placeras bakom teknikbyggnad, sett från järnvägen, om fastighetsgräns medger detta.",Product,Qualitative,Non-ambiguous,No reference,
+K211075,I Trafikverkets befintliga optokabelanläggningar i tunnlar får inte långdistanskabel användas för optisk radiokommunikation.,Product,Qualitative,Non-ambiguous,No reference,
+K55618,"Märkning av stolpe, sträva och brygga, dock ej kvadratisk stolpe, ska vara placerad enligt ritning 115 8664 - Montage av stolpbeteckningsskyltar.",Product,Qualitative,Non-ambiguous,Local,
+K35990,"Vid ""första kap"" av helsvetsad räl i spår om kapstället är minst två andningszoner ifrån eventuella andra kap ska spänningsfri temperatur dokumenteras enligt avsnitt 7.",Documentation,Mixed,Non-ambiguous,Local,
+K46571,Upphängningssanordning för verktyg att lyfta golvplattor med ska finnas i alla rum med installationsgolv.,Product,Qualitative,Non-ambiguous,No reference,
+K209485,Om det i samband med driftdämpningsmätning i Trafikverkets optokabelanläggningar upptäcks att ett eller flera mellanstycken i ODF-enheterna är defekta ska mellanstyckena bytas ut.,Process,Mixed,Non-ambiguous,No reference,
+K13316,Kameror får inte vara monterade på en höjd lägre än 6 m över vägbana.,Product,Quantitative,Non-ambiguous,No reference,
+K126020,"Rälskontakten Siemens S 44 ska, på en spårledningsförsedd sträcka, vara placerad på S- rälen för att undvika komplikationer med isoleringen av höljet.",Product,Qualitative,Non-ambiguous,No reference,
+K125924,"Skåpstolpe för kabelskåp tillhörande växlar resp spårspärrar ska vara isolerad mot markvärme med isolermatta, isolerskum eller annat isolermaterial.",Product,Qualitative,Non-ambiguous,No reference,
+K37853,Stödräl där tungan ligger an ska kontrolleras med manuell UT-vagn.,Process,Qualitative,Non-ambiguous,No reference,
+K50701,"Kontaktledningslutningen mellan två upphängningspunkter får inte överstiga 0,25 ‰.",Product,Quantitative,Non-ambiguous,No reference,
+K218296,Färgmarkering av gropkant vid kontrollgrop vid trafikkontrollplats ska vara med gul färg.,Product,Qualitative,Ambiguous (artificial),No reference,Color definition is vague.
+K160044,I de fall avståndet mellan fristående försignal och huvudljussignal är 1100 meter eller mer ska försignalen vara försedd med en tilläggsskylt ”avstånd”.,Product,Mixed,Non-ambiguous,No reference,
+K125677,Märkskyltar eller tilläggsskyltar ska vara monterade under varandra samt kompletterade med ett stödstag på den understa skylten om det är fler än en skylt.,Product,Qualitative,Non-ambiguous,No reference,
+K56218,Underlagstäckningar i yttertak ska vara utförda med byggpapp av kvalitet YAP 2200 eller bättre.,Product,Qualitative,Non-ambiguous,No reference,
+K30399,Tavlan för varning för klämrisk ska placeras enligt figur K8.,Product,Qualitative,Non-ambiguous,Local,
+K53046,Sektionsisolator med kniv ska kunna identifieras genom märkning.,Product,Qualitative,Non-ambiguous,No reference,
+K73594,Bullerskyddsskärm ska med 250 m intervall förses med skyltkombination som informerar om närmaste utrymningsväg.,Product,Quantitative,Non-ambiguous,No reference,
+K158871,Överklättringsskydd enligt K73537 alternativ 2-4 ska tillsammans med bullerskyddsskärm ge en effektiv höjd på minst 250 cm.,Product,Mixed,Non-ambiguous,Local,
+K54733,Mätanordning för kontroll av glykolhalten i kylarvattnet.,Product,Qualitative,Ambiguous (artificial),No reference,"This is a statement, not a requirement."
+K126098,Förbindelseledningar mellan S-räler i olika spår men i en och samma spårledning ska vara utfört med Cu-linor enligt figur nedan.,Product,Qualitative,Non-ambiguous,Local,
+K125648,"En signal i en kontaktledningsbrygga ska vara försedd med märkskylt och eventuell tilläggsskylt, enligt fastställda ritningar.",Product,Qualitative,Ambiguous (natural),Internal,The requirement refers to drawings that are not known but may exist.
+K56455,Brandavskiljande byggnadsdel mellan byggnader ska vara utförd i lägst klass EI 30.,Product,Qualitative,Non-ambiguous,No reference,
+K35197,"Växeltungor ska slipas över hela sin längd, med växeltungan vilande mot stödrälen.",Product,Qualitative,Non-ambiguous,No reference,
+K10215,Kameraenheter av PTZ-typ ska vara med funktion för panorering 360° utan stopp eller vändlägen.,Product,Mixed,Non-ambiguous,No reference,
+K134973,Brobaneplattas överyta ska utformas så att varje punkt på tätskikts överyta avvattnas.,Product,Qualitative,Non-ambiguous,No reference,
+K118454,Behörigheten ibruktagandebesiktningsman banöverbyggnad ska upphöra senast tre år efter senast godkända prov.,Process,Quantitative,Non-ambiguous,No reference,
+K217462,Kameraenheten ska med vinklingsbara standardfästen kunna monteras på både vägg och stolpe (diameter 80-150mm).,Product,Mixed,Ambiguous (artificial),No reference,Not defined what standard angled brackets are.
+K56194,"Konstruktionsvirke ska vara utfört med fuktspärr mot betong, murverk eller annat fuktsugande material.",Product,Qualitative,Ambiguous (artificial),No reference,"""other moisture-absorbing material"" is open for interpretation what it is."
+K118423,"Om säkerhetsbevisning består av fler dokument än besiktningsrapport TMALL 0387 Säkerhetsbevisning banöverbyggnad bilaga 9 eller besiktningsprotokoll TMALL 0377 Ibruktagandebesiktning bananläggning bilaga E, ska säkerhetsbevisning innefatta ett övergripande dokument, TMALL 0387 Säkerhetsbevisning banöverbyggnad bilaga 1, som innehåller en sammanställning över alla dokument som ingår i säkerhetsbevisning och vem som har tagit fram respektive dokument.",Documentation,Qualitative,Non-ambiguous,Internal,
+K134979,Brobaneplatta ska förses med droppnäsa längs kants undersida.,Product,Qualitative,Non-ambiguous,No reference,
+K125738,Kodpropparnas skyddshylsor ska plomberas med plastplomb efter ibruktagandebesiktning/kontrollbesiktning.,Process,Qualitative,Non-ambiguous,No reference,
+K68247,En förteckning över behöriga granskare och besiktningsmän med tillhörande behörighetsbevis (dokument och giltighetstid) ska föras av chefen Elkraft.,Process,Qualitative,Non-ambiguous,No reference,
+K45477,Kopplingsplint för 400/230 V AC 50 Hz ska vara separerad från övriga kopplingsplintar för att undvika sammanblandning med kopplingsplint för annan spänning.,Product,Mixed,Non-ambiguous,No reference,
+K29838,Stängsel ska byta sida av stolpe minst var 7:e stolpe.,Product,Quantitative,Non-ambiguous,No reference,
+K30402,Ploglyfttavla enligt figur K8.,Product,Qualitative,Ambiguous (artificial),Local,Verb is missing in the sentence.
+K29395,"Slingans längd ska vara 1–1,5 m i körriktningen (mått B).",Product,Quantitative,Non-ambiguous,No reference,
+K29268,Stängsel ska utformas för att minska obehörigt spårbeträdande vid trafikplats med resandeutbyte och längs linjen.,Product,Qualitative,Ambiguous (artificial),No reference,"""reduce unauthorized track entry"" is a matter of interpretation what is needed."
+K46916,För målningskoder i rumsbeskrivningen ska AMA Hus - Allmän material- och arbetsbeskrivning för husbyggnadsarbeten LCS.,Documentation,Qualitative,Ambiguous (artificial),External,Documentation because of mentioning of room descriptions. Ambiguous since the sentence is missing a verb.
+K43394,"Varje del av konstruktionsredovisningen ska vara försedd med konstruktionsföretagets namn, underskrift och datum.",Documentation,Qualitative,Non-ambiguous,No reference,
+K53363,Ska klara kort stöt över frånskiljningssträckan för märkhållspänningen.,Product,Qualitative,Ambiguous (artificial),No reference,Subject is missing in the sentence. To what does the requirement apply?
+K44225,"Vatten- och frostsäkring som inte är motgjuten ska, med hänsyn till frysning, dimensioneras för last vid isbildning enligt avsnitt 8.",Product,Qualitative,Non-ambiguous,Local,
+K9981,Symboler för detektorkablar för brandlarm i grafiska användargränssnitt ska i onormalt läge visa brandskyddsanordning inom brandsektionen.,Product,Qualitative,Non-ambiguous,No reference,
+K126143,Ändförslutning av ATC-Kabel TRV-FLLAL ska göras enligt figur nedan Figur.,Product,Qualitative,Non-ambiguous,Local,
+K15813,Leverantören ska kalla Beställaren till möten och provningstillfällen minst det antal dagar i förväg som angivits i tidsplan.,Process,Qualitative,Non-ambiguous,Internal,
+K134707,Räcke ska utformas så att krav på dess funktion som skyddsanordning uppfylls även vid fogar och grindar.,Product,Qualitative,Ambiguous (artificial),No reference,One could argue that this is ambiguous since those requirements are not referenced.
+K83560,"Panelstängsel ska uppfylla kraven enligt SSF 1087, Klass C, Risknivå 2.",Product,Qualitative,Non-ambiguous,External,
+K13360,Stolpar och bärverk för trafikinformationstavla av typ B ska vara placerade bakom trafikinformationstavlan så att de döljs för trafiken.,Product,Qualitative,Non-ambiguous,No reference,
+K160222,Signalpunktstavla ska vara placerad så att pilen pekar mot det spår tavlan gäller för.,Product,Qualitative,Non-ambiguous,No reference,
+K73333,Ledig anslutningsport ska vara konfigurerad för så kallad ”port-mirroring”.,Product,Qualitative,Non-ambiguous,No reference,
+K72804,Symboler för lastfrånskiljare ska ha utformning och färger enligt Tabell 10.,Product,Qualitative,Non-ambiguous,Local,
+K157960,"Lagret ska utföras med krav på material, utförande och kontroll enligt AMA Anläggning.",Product,Qualitative,Non-ambiguous,External,
+K37590,Tungspets och stödräls ändar ska positioneras vinkelrätt vid utbyte av dilatationshalva.,Product,Qualitative,Non-ambiguous,No reference,
+K34336,Vagnlägesskyltar på plattformar ska sättas upp på ett avstånd av 25 ± 10 meter från plattformens yttersta U-skyltar.,Product,Quantitative,Non-ambiguous,No reference,
+K30184,"Minsta sektion C, se figur K5.",Product,Qualitative,Ambiguous (artificial),Local,"Text missing (on purpose, and not an export error)."
+K53035,Sektionsisolatorerns ljusbågshorn ska vara hela.,Product,Qualitative,Non-ambiguous,No reference,
+K157917,Bärighet eller packningsgrad behöver inte kontrolleras på ytor där endast bundna lager åtgärdas.,Process,Qualitative,Non-ambiguous,No reference,
+K218241,En bomsignal får inte vara placerad på en ägovägsbom.,Product,Qualitative,Non-ambiguous,No reference,
+K62349,Säkerhetsblad ska minst innehålla följande information: · Första hjälpen · Hantering · Lagring · Miljöpåverkan · Personliga skydd · Åtgärder i samband med släckning av brand · Destruktion.,Documentation,Qualitative,Non-ambiguous,No reference,
+K54716,"En tydlig skylt, som anger reservkraftstationens beteckning (typ av reservkraftstation plus reservkraftstationens nummer) samt adress och telefonnummer till leverantören ska finnas.",Product,Qualitative,Non-ambiguous,No reference,
+K127204,Efter godtagande ska reviderade ritningar och beskrivningar vara försedda med ny märkning enligt avsnitt 5.,Documentation,Qualitative,Non-ambiguous,Local,
+K34370,Uppvärmd körbana vid trafikkontrollplats ska vara 5 m bred.,Product,Quantitative,Non-ambiguous,No reference,
+K195096,Ett klätterskydd ska tåla last av plogsnö enligt avsnitt 8.,Product,Qualitative,Non-ambiguous,Local,
+K56590,"Skruvar, pinnbultar, brickor, rörklammer och muttrar som finns ute i det fria ska vara i galvaniserat- eller rostfritt utförande.",Product,Qualitative,Non-ambiguous,No reference,
+K161212,"Avgränsningen vid stoppbock ska vara placerad 2,0 till 3,0 meter från stoppbocken.",Product,Quantitative,Ambiguous (artificial),No reference,The distance formulation is ambiguous. Is this the allowable interval?
+K34374,"Lyftbord ,i kontrollgrop vid trafikkontrollplats, ska vara enligt {SS-EN 1570- 1:2011+A1:2014}.",Product,Qualitative,Non-ambiguous,External,
+K34318,Hängande stationsnamnskyltar på plattformar ska placeras på en höjd av 2 700 mm mätt från skyltens underkant.,Product,Quantitative,Non-ambiguous,No reference,
+K4173,Markeringsskärmar på vägbom för avstängningsanordningar ska vara med röd/gul färg.,Product,Qualitative,Ambiguous (artificial),No reference,Colors not clearly defined.
+K73652,Bullerskyddsskärm får inte placeras inom deklarerad arbetsbredd hos angränsande fordonsåterhållande räcke.,Product,Qualitative,Ambiguous (natural),No reference,"""Declared working width"" is a solution-open definition. Hence, while vague, it is ok."
+K64460,Korta kablar som helt kan överblickas och vars funktion är självklar ska inte ges beteckning eller märkas.,Product,Qualitative,Ambiguous (artificial),No reference,"""Short"", ""completely"", ""obvious"" are all subjective qualifiers."
+K157923,Utspetsning ska utformas av jord eller isoleringsmaterial samt påbörjas och avslutas vinkelrätt mot vägens längdriktning.,Product,Qualitative,Non-ambiguous,No reference,
+K158760,Bullerskyddsskärm försedd med tillsats ska uppfylla ställda krav på egenskaper hos bullerskyddsskärm och grundkonstruktion.,Product,Qualitative,Ambiguous (artificial),No reference,No reference to the additional requirements is given.
+K124690,Ibruktagandeledaren ska ansvara för att ibruktagandebesiktningen dokumenteras.,Process,Qualitative,Non-ambiguous,No reference,"Even though documentation is mentioned, the emphasis of the requirement is on the documentation process."
+K134788,Hydraulkomponent ska förses med märkskylt av varaktigt material.,Product,Qualitative,Ambiguous (artificial),No reference,Durable is vague
+K35087,Nya skyddsringar ska användas för varje pinnlödning.,Process,Qualitative,Non-ambiguous,No reference,Process since the requirement refers to the construction process.
+K124874,"Vid ibruktagande- och kontrollbesiktning av mekaniskt växeltunglås, ska generella kontroller utföras.",Process,Qualitative,Ambiguous (artificial),No reference,"""General checks"" is vague."
+K73648,"Låg spårnära bullerskyddsskärm 0,73 m över rälöverkant ska uppfylla krav på: · utformning · placering · beslut om uppsättning enligt TRVINFRA-00004 Ban- och stationsutformning Infrastrukturprofiler.",Product,Mixed,Non-ambiguous,Internal,
+K135609,"I brobaneplatta av betong på huvudbalk av betong ska tvärgående armering i snitt invid balklivet vara minst 0,15 % av betongarean.",Product,Quantitative,Non-ambiguous,No reference,
+K126259,Omskarvning av befintliga kablar eller nyanläggning av optokabel ska göras där det inte finns optofiber mellan ställverk och utdelskurar/-kiosker.,Product,Qualitative,Non-ambiguous,No reference,
