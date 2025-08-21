@@ -3,7 +3,7 @@ The predictor
 
 Parameter 1: a path to the models for different classification dimensions.
 Parameter 2: a file containing a list of requirements IDs for wich we do
-             not want to have predictions, g.g. because they have been
+             not want to have predictions, e.g. because they have been
              used for training.
 Parameter 3: The file containing the requirements for which we want to have
              predictions.
