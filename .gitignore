@@ -167,3 +167,5 @@ keys.py
 
 confidential_data
 models
+
+*.gradio*
