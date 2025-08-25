@@ -1,0 +1,4 @@
+setfit
+gradio
+sentence-transformers
+torch
