@@ -71,12 +71,12 @@ custom_css = """
 """
 
 if __name__ == "__main__":
-    gr.set_static_paths(paths=[Path.cwd().absolute()/"assets"])
+    gr.set_static_paths(paths=[Path.cwd().absolute()/"ui"/"assets"])
 
     with gr.Blocks(title="Requirements Verifiability Classifier", css=custom_css) as demo:
 
         with gr.Row(elem_id="logo-container"):
-            gr.HTML("<img src='/gradio_api/file=assets/bth.png' alt='BTH logo'>")
+            gr.HTML("<img src='/gradio_api/file=ui/assets/bth.png' alt='BTH logo'>")
 
         gr.Markdown("# Requirements Verifiability Classifier")
 
