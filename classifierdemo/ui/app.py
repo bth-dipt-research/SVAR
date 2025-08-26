@@ -1,12 +1,15 @@
 import gradio as gr
 from setfit import SetFitModel
 from pathlib import Path
+import os
+
+token = os.environ["HF_TOKEN"]
 
 models = {
-    'target': SetFitModel.from_pretrained('munterk/trvinfra_target'),
-    'nature': SetFitModel.from_pretrained('munterk/trvinfra_nature'),
-    'interpretability': SetFitModel.from_pretrained('munterk/trvinfra_interpretability'),
-    'reference': SetFitModel.from_pretrained('munterk/trvinfra_reference')
+    'target': SetFitModel.from_pretrained('munterk/trvinfra_target', token=token),
+    'nature': SetFitModel.from_pretrained('munterk/trvinfra_nature', token=token),
+    'interpretability': SetFitModel.from_pretrained('munterk/trvinfra_interpretability', token=token),
+    'reference': SetFitModel.from_pretrained('munterk/trvinfra_reference', token=token)
 }
 
 
