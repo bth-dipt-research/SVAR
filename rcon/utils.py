@@ -159,7 +159,7 @@ def train(modelname, epochs, train_data, val_data):
     )
 
     train_dataloader = create_dataloader(train_data, True)
-    validation_dataloader = create.dataloader(val_data, False)
+    validation_dataloader = create_dataloader(val_data, False)
 
     if torch.cuda.is_available():
         model.cuda()
