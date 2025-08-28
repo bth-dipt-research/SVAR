@@ -2,7 +2,7 @@
 
 This repository contains code developed for the [SVAR project](https://www.bth.se/eng/research/research-areas/software-engineering/requirements-engineering/systematic-verification-and-acceptance-of-requirements-svar/).
 
-# Supervised and unsupervised classifier implementations
+# Core code
 
 ## SetFit classifier (supervised)
 See the [README](setfitclassifier/README.md) in setfitclassifier for more information.
@@ -26,7 +26,8 @@ The code for this classifier can be found [here](rcon/).
 ## Agreement prediction
 After two rounds of labeling, we have collected data on 72 requirements where the labelers agree or disagree. We use this information to train a classifier to predict agreement. We do this so that a single labeler can proceed and sample from the requirements that are predicted to have agreed labels.
 
-We use again [nested cross-fold validation](setfitclassifier/nested_crossvalidation.py) to identify the hyper-parameters for the classifier and evaluate its performance. The [code to train](setfitclassifier/train_agreement.py) the model uses the learned hyper-parameters. The resulting model is then used to [predict](setfitclassifier/predict_agreement.py) the agreement.
+We use again [nested cross-fold validation](setfitclassifier/nested_crossvalidation.py) to identify the hyper-parameters for the classifier and evaluate its performance. We create a classifier for each dimensions: target, nature, interpretability and reference. The [code to train](setfitclassifier/train_agreement.py) the model uses the learned hyper-parameters. The resulting model is then used to [predict](setfitclassifier/predict_agreement.py) the agreement.
+
 
 The input and results of this analysis can be found [here](data/agreement_classification).
 
