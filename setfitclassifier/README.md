@@ -37,7 +37,7 @@ SetFit has a bug where GPU memory is not released after model training, see this
 We wanted to study how training set size affects performance. The code [here](training_set_size_study.py) uses the identified best hyper-parameters from the nested cross-validation with 250 samples to train models with training set sizes ranging from 20 to 240. The results of this investigation can be found [here](../data/training_set_size_study).
 
 # Test set evaluation
-In addition to nested cross-validation, we [evaluate](test_set_evaluation.py) the classifier on unseen data, an additional [250 requirements](../data/test_set_evaluation/SOLO\ Iteration\ 2\ data\ -\ Test\ set.csv), that was not used for training at all. The results of precision, recall, f1-score (micro, macro, weighted) can be found [here](../data/test_set_evaluation/setfitclassifier/solo2_model20250630_evaluation.csv).
+In addition to nested cross-validation, we [evaluate](test_set_evaluation.py) the classifier on unseen data, an additional [250 requirements](../data/test_set_evaluation/SOLO_Iteration_2_data-Test_set.csv), that was not used for training at all. The results of precision, recall, f1-score (micro, macro, weighted) can be found [here](../data/test_set_evaluation/setfitclassifier/solo2_model20250630_evaluation.csv).
 
 # Training
 
